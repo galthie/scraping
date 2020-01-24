@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+ <title>gihyo.jp：総合</title>
+ <link>https://gihyo.jp/</link>
+ <description>gihyo.jp（総合）の更新情報をお届けします</description>
+ <language>ja-jp</language>
+ <copyright>技術評論社 2020</copyright>
+ <lastBuildDate>Sat, 25 Jan 2020 06:22:00 +0900</lastBuildDate>
+ <image>
+  <url>https://gihyo.jp/assets/templates/gihyojp2007/image/header_logo_gihyo.gif</url>
+  <title>gihyo.jp</title>
+  <link>https://gihyo.jp/</link>
+ </image>
+ <item>
+  <title>2020年1月24日　「Red Hat Enterprise Linux 8.2」がベータサイクルに，GCC 9.1やPython 3.8など ── Linux Daily Topics</title>
+  <link>https://gihyo.jp/admin/clip/01/linux_dt/202001/24</link>
+  <description>Red Hatは1月21日（米国時間），「Red Hat Enterprise Linux 8.2」のパブリックベータ版の提供を開始した。</description>
+  <pubDate>Fri, 24 Jan 2020 15:43:00 +0900</pubDate>
+  <category domain="https://gihyo.jp/admin/clip/01/linux_dt">Linux Daily Topics</category>
+  <guid>https://gihyo.jp/admin/clip/01/linux_dt/202001/24</guid> 
+  <author>階戸アキラ</author>
+ </item>
+ <item>
+  <title>第16回　Days of WINE and Struggles［3］ ── 続・玩式草子 ―戯れせんとや生まれけん―</title>
+  <link>https://gihyo.jp/lifestyle/serial/01/ganshiki-soushi-2/0016</link>
+  <description>本連載では今回が2020年最初の回なので，ずいぶん遅ればせになるものの，皆さま，明けましておめでとうございます。筆者の怠惰と遅筆の故，不定期になりがちなこの連載ですが，今年もまったりとお付き合いいただければ幸いです。</description>
+  <pubDate>Fri, 24 Jan 2020 11:41:00 +0900</pubDate>
+  <category domain="https://gihyo.jp/lifestyle/serial/01/ganshiki-soushi-2">続・玩式草子 ―戯れせんとや生まれけん―</category>
+  <guid>https://gihyo.jp/lifestyle/serial/01/ganshiki-soushi-2/0016</guid> 
+  <author>こじまみつひろ</author>
+ </item>
+ <item>
+  <title>2020年1月24日号　『Anbox Cloud』サービスの発表・19.04のEOL ── Ubuntu Weekly Topics</title>
+  <link>https://gihyo.jp/admin/clip/01/ubuntu-topics/202001/24</link>
+  <description>Canonicalから新しいプラットフォーム，『Anbox Cloud』が発表されました。また，19.04（Disco）がEOLしました。
+</description>
+  <pubDate>Fri, 24 Jan 2020 09:38:00 +0900</pubDate>
+  <category domain="https://gihyo.jp/admin/clip/01/ubuntu-topics">Ubuntu Weekly Topics</category>
+  <guid>https://gihyo.jp/admin/clip/01/ubuntu-topics/202001/24</guid> 
+  <author>吉田史</author>
+ </item>
+ <item>
+  <title>2020年1月第4週号 1位は，2020年に見ておくべき7つのUIトレンド，気になるネタは，Chromeアプリ，Windows，Mac，Linux向けは2020年12月にサポート終了 ── 週刊Webテク通信</title>
+  <link>https://gihyo.jp/design/clip/01/weekly-web-tech/202001/23</link>
+  <description>ネットで見かけたWebテク（Webテクニック・Webテクノロジー）記事から，Webデザイナーの目で厳選したネタを週刊で紹介するこのコーナー。今回は，2020年1月13日～1月19日の間に見つけた記事のベスト5です。</description>
+  <pubDate>Thu, 23 Jan 2020 13:03:00 +0900</pubDate>
+  <category domain="https://gihyo.jp/design/clip/01/weekly-web-tech">週刊Webテク通信</category>
+  <guid>https://gihyo.jp/design/clip/01/weekly-web-tech/202001/23</guid> 
+  <author>芦之由</author>
+ </item>
+ <item>
+  <title>2020年1月第4週　OPPOを通じて見るカスタマイズAndroidの現状，ColorOS 7公開ほか ── Android Weekly Topics</title>
+  <link>https://gihyo.jp/lifestyle/clip/01/awt/202001/23</link>
+  <description>2020年1月第4週のAndroid関連のニュースです。</description>
+  <pubDate>Thu, 23 Jan 2020 09:30:00 +0900</pubDate>
+  <category domain="https://gihyo.jp/lifestyle/clip/01/awt">Android Weekly Topics</category>
+  <guid>https://gihyo.jp/lifestyle/clip/01/awt/202001/23</guid> 
+  <author>傍島康雄</author>
+ </item>
+ <item>
+  <title>2020年1月23日　Canonical，Androidワークロード向けプラットフォーム「Anbox Cloud」を発表 ── Linux Daily Topics</title>
+  <link>https://gihyo.jp/admin/clip/01/linux_dt/202001/23</link>
+  <description>Canonicalは1月21日，Androidワークロードに特化したクラウドコンピューティングプラットフォーム「Anbox Cloud」を発表した。</description>
+  <pubDate>Thu, 23 Jan 2020 09:25:00 +0900</pubDate>
+  <category domain="https://gihyo.jp/admin/clip/01/linux_dt">Linux Daily Topics</category>
+  <guid>https://gihyo.jp/admin/clip/01/linux_dt/202001/23</guid> 
+  <author>階戸アキラ</author>
+ </item>
+ <item>
+  <title>グレープシティ，SpreadJSの新バージョン「V13J」を2020年1月22日にリリース ── ニュースリリース</title>
+  <link>https://gihyo.jp/news/nr/2020/01/2201</link>
+  <description>グレープシティ株式会社は，業務アプリケーション開発を支援する「SpreadJS」の新バージョン「V13J」を2020年1月22日（水）にリリースした。</description>
+  <pubDate>Wed, 22 Jan 2020 19:57:00 +0900</pubDate>
+  <category domain="https://gihyo.jp/news/nr">ニュースリリース</category>
+  <guid>https://gihyo.jp/news/nr/2020/01/2201</guid> 
+  <author>技術評論社</author>
+ </item>
+ <item>
+  <title>2020年1月22日　つるむねこーず ── 帰ってきた『技評ねこ部通信』</title>
+  <link>https://gihyo.jp/lifestyle/clip/01/monthly-cat/202001/0122</link>
+  <description>ねこは単独行動を好む，と言いますが，結構つるんでいたりもします。</description>
+  <pubDate>Wed, 22 Jan 2020 15:00:00 +0900</pubDate>
+  <category domain="https://gihyo.jp/lifestyle/clip/01/monthly-cat">帰ってきた『技評ねこ部通信』</category>
+  <guid>https://gihyo.jp/lifestyle/clip/01/monthly-cat/202001/0122</guid> 
+  <author></author>
+ </item>
+ <item>
+  <title>第8回　イノベーションを加速させるアジャイル開発／DevOps（後編） ── コードの安全性・安定性を高める開発サイクル ～テスト管理の効率を上げ，脆弱性診断を自動で行う～</title>
+  <link>https://gihyo.jp/dev/serial/01/code_dev_cycle/0008</link>
+  <description>前編のとおり，アジャイル手法を取り入れたチームはOne Team（ワンチーム）になることが大切です。チームがワンチームになるのであれば，ツールもワンチームにならないといけません。</description>
+  <pubDate>Wed, 22 Jan 2020 13:35:00 +0900</pubDate>
+  <category domain="https://gihyo.jp/dev/serial/01/code_dev_cycle">コードの安全性・安定性を高める開発サイクル ～テスト管理の効率を上げ，脆弱性診断を自動で行う～</category>
+  <guid>https://gihyo.jp/dev/serial/01/code_dev_cycle/0008</guid> 
+  <author>大塚和彦</author>
+ </item>
+ <item>
+  <title>第603回　RISC-VのDebianイメージをQEMUで動かす ── Ubuntu Weekly Recipe</title>
+  <link>https://gihyo.jp/admin/serial/01/ubuntu-recipe/0603</link>
+  <description>第505回ではオープン規格の新しい命令セットアーキテクチャであるRISC-Vのシミュレーター，spikeを使ってRISC-Vバイナリを実行しました。今回はRISC-V対応QEMUを使って，RISC-Vの仮想マシン上でDebianを起動してみましょう。</description>
+  <pubDate>Wed, 22 Jan 2020 10:07:00 +0900</pubDate>
+  <category domain="https://gihyo.jp/admin/serial/01/ubuntu-recipe">Ubuntu Weekly Recipe</category>
+  <guid>https://gihyo.jp/admin/serial/01/ubuntu-recipe/0603</guid> 
+  <author>柴田充也</author>
+ </item>
+ <item>
+  <title>ロクナナワークショップ 【新講座】『大重美幸のSwiftUI iPhoneアプリ開発入門講座』を3月より開講 ── ロクナナワークショップ NEWS &amp; REPORT</title>
+  <link>https://gihyo.jp/design/serial/01/67ws/0149</link>
+  <description>Web制作の学校 ロクナナワークショップでは，2020年3月より，SwiftUIを使ったiPhoneアプリ開発の入門講座を開講します。</description>
+  <pubDate>Wed, 22 Jan 2020 09:30:00 +0900</pubDate>
+  <category domain="https://gihyo.jp/design/serial/01/67ws">ロクナナワークショップ NEWS &amp; REPORT</category>
+  <guid>https://gihyo.jp/design/serial/01/67ws/0149</guid> 
+  <author>Web制作の学校 ロクナナワークショップ</author>
+ </item>
+ <item>
+  <title>2020年1月22日　Debianプロジェクトがポリシーを改訂，&quot;systemdオルタナティブ&quot;を容認へ ── Linux Daily Topics</title>
+  <link>https://gihyo.jp/admin/clip/01/linux_dt/202001/22</link>
+  <description>DebianプロジェクトのSean Whittonは1月20日，Debian開発者メーリングリストに「Debian Policy 4.5.0.0 released」と題したポストを投稿した。</description>
+  <pubDate>Wed, 22 Jan 2020 09:15:00 +0900</pubDate>
+  <category domain="https://gihyo.jp/admin/clip/01/linux_dt">Linux Daily Topics</category>
+  <guid>https://gihyo.jp/admin/clip/01/linux_dt/202001/22</guid> 
+  <author>階戸アキラ</author>
+ </item>
+ <item>
+  <title>はじめに ── Python実践入門 ──言語の力を引き出し、開発効率を高める</title>
+  <link>https://gihyo.jp/book/2020/978-4-297-11111-3/content/preface</link>
+  <description>本書は，これからPythonを始めようとしているプログラミング経験者に最適なPython入門書です。</description>
+  <pubDate>Tue, 21 Jan 2020 15:15:00 +0900</pubDate>
+  <category domain="https://gihyo.jp/book/2020/978-4-297-11111-3">Python実践入門 ──言語の力を引き出し、開発効率を高める</category>
+  <guid>https://gihyo.jp/book/2020/978-4-297-11111-3/content/preface</guid> 
+  <author>陶山嶺</author>
+ </item>
+ <item>
+  <title>エンジニアフレンドリーシティ福岡フェスティバル，2020年1月31日〜2月1日に開催 ── インフォメーション</title>
+  <link>https://gihyo.jp/news/info/2020/01/2001</link>
+  <description>エンジニアフレンドリーシティ福岡フェスティバルが，2020年1月31日〜2月1日に開催。</description>
+  <pubDate>Mon, 20 Jan 2020 17:11:00 +0900</pubDate>
+  <category domain="https://gihyo.jp/news/info">インフォメーション</category>
+  <guid>https://gihyo.jp/news/info/2020/01/2001</guid> 
+  <author>技術評論社</author>
+ </item>
+ <item>
+  <title>＃002　Qtの今後を示す道しるべ ―「Qt Contributors' Summit 2019」レポート ── 「Qt World Summit 2019」「Qt Contributors' Summit 2019」参加レポート</title>
+  <link>https://gihyo.jp/news/report/01/qt-summit19/0002</link>
+  <description>「Qt World Summit 2019 Berlin」から2週間後の2019年11月19日～21日，同じベルリンで「Qt Contributors' Summit 2019」（以下QtCS）が開催されました。</description>
+  <pubDate>Mon, 20 Jan 2020 10:52:00 +0900</pubDate>
+  <category domain="https://gihyo.jp/news/report/01/qt-summit19">「Qt World Summit 2019」「Qt Contributors' Summit 2019」参加レポート</category>
+  <guid>https://gihyo.jp/news/report/01/qt-summit19/0002</guid> 
+  <author>朝木卓見</author>
+ </item>
+ <item>
+  <title>2020年1月17日　RHEL 8.1をベースにした「CentOS-8 1911」がリリース ── Linux Daily Topics</title>
+  <link>https://gihyo.jp/admin/clip/01/linux_dt/202001/17</link>
+  <description>CentOSプロジェクトのBrian Stinsonは1月15日（世界標準時），「CentOS Linux 8 (1911)」の一般提供開始（GA）を発表した。</description>
+  <pubDate>Fri, 17 Jan 2020 15:34:00 +0900</pubDate>
+  <category domain="https://gihyo.jp/admin/clip/01/linux_dt">Linux Daily Topics</category>
+  <guid>https://gihyo.jp/admin/clip/01/linux_dt/202001/17</guid> 
+  <author>階戸アキラ</author>
+ </item>
+ <item>
+  <title>第140回　最終回記念「聞かせて！ いろいろランキング」 ── きたみりゅうじの聞かせて珍プレー</title>
+  <link>https://gihyo.jp/dev/serial/01/funny-play/0140</link>
+  <description>2007年からあしかけ13年（！）にわたってお届けしてまいりました「きたみりゅうじの聞かせて珍プレー」もいよいよ最終回。今回は特別編としてこれまでの連載をランキング形式で振り返ります。</description>
+  <pubDate>Fri, 17 Jan 2020 09:30:00 +0900</pubDate>
+  <category domain="https://gihyo.jp/dev/serial/01/funny-play">きたみりゅうじの聞かせて珍プレー</category>
+  <guid>https://gihyo.jp/dev/serial/01/funny-play/0140</guid> 
+  <author>きたみりゅうじ，編集部</author>
+ </item>
+ <item>
+  <title>AUTOMATIST，日本最難関のAI人材判定試験「巣籠塾検定」およびスマホ用「AI基礎充実コース」を発表 ── ニュースリリース</title>
+  <link>https://gihyo.jp/news/nr/2020/01/1401</link>
+  <description>AUTOMATISTは，日本最難関のAI人材判定試験「巣籠塾検定」およびスマホ用「AI基礎充実コース」を発表した</description>
+  <pubDate>Thu, 16 Jan 2020 10:00:00 +0900</pubDate>
+  <category domain="https://gihyo.jp/news/nr">ニュースリリース</category>
+  <guid>https://gihyo.jp/news/nr/2020/01/1401</guid> 
+  <author>技術評論社</author>
+ </item>
+ <item>
+  <title>2020年1月第3週号 1位は，ニューモーフィズムが2020年大きなトレンドにはならない理由，気になるネタは，YouTubeが子供向けコンテンツでのターゲット広告とデータ収集の制限を開始 ── 週刊Webテク通信</title>
+  <link>https://gihyo.jp/design/clip/01/weekly-web-tech/202001/16</link>
+  <description>ネットで見かけたWebテク（Webテクニック・Webテクノロジー）記事から，Webデザイナーの目で厳選したネタを週刊で紹介するこのコーナー。今回は，2019年12月23日～2020年1月12日の間に見つけた記事のベスト5です。</description>
+  <pubDate>Thu, 16 Jan 2020 09:31:30 +0900</pubDate>
+  <category domain="https://gihyo.jp/design/clip/01/weekly-web-tech">週刊Webテク通信</category>
+  <guid>https://gihyo.jp/design/clip/01/weekly-web-tech/202001/16</guid> 
+  <author>芦之由</author>
+ </item>
+ <item>
+  <title>2020年1月第3週　Googleのデフォルト検索エンジンリスト公開で「Don't be evil」が頭をよぎる ── Android Weekly Topics</title>
+  <link>https://gihyo.jp/lifestyle/clip/01/awt/202001/16</link>
+  <description>2020年1月第3週のAndroid関連のニュースをお届けします。</description>
+  <pubDate>Thu, 16 Jan 2020 09:31:00 +0900</pubDate>
+  <category domain="https://gihyo.jp/lifestyle/clip/01/awt">Android Weekly Topics</category>
+  <guid>https://gihyo.jp/lifestyle/clip/01/awt/202001/16</guid> 
+  <author>傍島康雄</author>
+ </item>
+</channel>
+</rss>
