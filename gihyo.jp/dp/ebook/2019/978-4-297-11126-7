@@ -1,0 +1,414 @@
+<!DOCTYPE HTML>
+<html lang="ja" class="pc">
+<head>
+  <meta charset="UTF-8">
+  <title>［改訂新版］jQueryポケットリファレンス | Gihyo Digital Publishing … 技術評論社の電子書籍</title>
+  <meta http-equiv="Content-Style-Type" content="text/css"/>
+  <meta http-equiv="Content-Script-Type" content="application/javascript"/>
+  <meta name="description" content="JavaScriptの定番ライブラリ「jQuery」の最後発で最新なリファレンスブック登場！初版はおよそ9年前に発売されましたが，あまたのバージョンアップ版の要望に応え，ようやく筆者が重い腰を上げて最新版で書き上げてくれました。ほかにもたくさんのJavaScriptライブラリがありますが，さまざまな有名サイトで使用され，そのメンテナンスやサイトのバージョンアップなどにもニーズがあるかと思われます。いまやWebデザイナーでもJavaScriptをかくことが要求され当然のように依頼されることもあります。jQueryの学習と知りたい機能を探すことができるリファレンス，いいところどりのポケットリファレンスでWebをもっとよくしていきませんか！"/>
+  <meta name="keywords" content="電子書籍,電子出版,EPUB,PDF,技術評論社"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="format-detection" content="telephone=no"/>
+  <link rel="related" href="http://gihyo.jp/dp/catalogs.opds" type="application/atom+xml;profile=opds-catalog" title="Gihyo Digital Publishing OPDS Catalog"/>
+  <link rel="shortcut icon" href="/assets/templates/gdp/favicon.ico" type="image/vnd.microsoft.icon"/>
+  <link rel="apple-touch-icon-precomposed" href="/dp/assets/gdp-icon.png"/>
+  <!--[if lt IE 9]>
+    <script>var msie=8;</script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="/dp/assets/js/html5shiv.min.js"></script>
+    <script src="//css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <script src="/dp/assets/js/selectivizr-min.js"></script>
+    <script src="/dp/assets/js/addEventListener.min.js"></script>
+    <script src="/dp/assets/js/textContent.min.js"></script>
+  <![endif]-->
+  <!--[if lte IE 9]>
+    <script src="/dp/assets/js/classList.min.js" defer></script>
+  <![endif]-->
+  <link rel="stylesheet" href="/dp/assets/style/store1217.css" type="text/css" media="all"/>
+  <script src="/dp/assets/js/gdpFunction0411.min.js" defer></script>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:site" content="@gihyoDP"/>
+  <meta property="og:title" content="［改訂新版］jQueryポケットリファレンス | Gihyo Digital Publishing … 技術評論社の電子書籍"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:description" content="JavaScriptの定番ライブラリ「jQuery」の最後発で最新なリファレンスブック登場！初版はおよそ9年前に発売されましたが，あまたのバージョンアップ版の要望に応え，ようやく筆者が重い腰を上げて最新版で書き上げてくれました。ほかにもたくさんのJavaScriptライブラリがありますが，さまざまな有名サイトで使用され，そのメンテナンスやサイトのバージョンアップなどにもニーズがあるかと思われます。いまやWebデザイナーでもJavaScriptをかくことが要求され当然のように依頼されることもあります。jQueryの学習と知りたい機能を探すことができるリファレンス，いいところどりのポケットリファレンスでWebをもっとよくしていきませんか！"/>
+  <meta property="og:url" content="https://gihyo.jp/dp/ebook/2019/978-4-297-11126-7"/>
+  <meta property="og:image" content="https://image.gihyo.co.jp/assets/images/gdp/2019/978-4-297-11126-7.jpg"/>
+  <meta property="og:site_name" content="Gihyo Digital Publishing"/>
+  <meta property="fb:app_id" content="185201618169441"/>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-4149703-1', 'auto');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+  </script>
+</head>
+<body itemscope="itemscope" itemtype="http://schema.org/WebPage" class="page-home">
+  <header id="header" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
+    <h1 class="home-title">Gihyo Digital Publishing</h1>
+    <h2 class="home-subtitle">技術評論社の電子書籍サイト</h2>
+    <nav id="headerFunction">
+      <div id="login">
+        <a href="#login" title="ログイン・会員登録">ログイン</a>
+      </div>
+      <div id="cart">
+        <a href="/dp/cart" title="カートは空です">カート</a>
+      </div>
+    </nav>
+  </header>
+  <div id="main">
+    <noscript><div id="noscript">
+      <p>本サイトではJavaScriptを使用しております。JavaScriptが無効な状態ではご利用いただけません。</p>
+    </div></noscript>
+
+<div id="overlayWindow" class="book-infor" itemscope itemtype="http://schema.org/Book" typeof="product:Product" xmlns:product="http://search.yahoo.com/searchmonkey/product/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:media="http://search.yahoo.com/searchmonkey/media/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:currency="http://search.yahoo.com/searchmonkey-datatype/currency/" style="display:block;opacity:1">
+  <header id="overlayHeader">
+    <h1>書籍概要</h1>
+    <nav id="overlayFunction">
+      <p id="close"><a href="/dp/genre/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E3%83%BB%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E9%96%8B%E7%99%BA" title="閉じる">閉じる</a></p>
+      <ul id="jump">
+        <li id="detailRef"><a href="#title" title="概要を見る">概要</a></li>
+        <li id="contentRef"><a href="#content" title="目次を見る">目次</a></li>
+        <li id="supportRef"><a href="#support" title="サポート情報を見る">サポート</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div id="bookInforMain">
+  <hgroup id="title">
+<h2 id="bookSeries"><a href="/dp/series/%E3%83%9D%E3%82%B1%E3%83%83%E3%83%88%E3%83%AA%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9">ポケットリファレンス</a></h2>
+    <h1 id="bookTitle" property="rdfs:label" itemprop="name">［改訂新版］<wbr/>jQuery<wbr/>ポケットリファレンス</h1>
+  </hgroup>
+  <aside id="bookCover" rel="rdfs:seeAlso media:image"><img src="https://image.gihyo.co.jp/assets/images/gdp/2019/978-4-297-11126-7.jpg" alt="［改訂新版］jQueryポケットリファレンス"/></aside>
+  <dl id="publicationData" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+    <dt>著者</dt>
+    <dd itemprop="author">鶴田展之　著</dd>
+    <dt>発売日</dt>
+    <dd><time datetime="2019-12-21">2019年12月21日</time></dd>
+    <dt>更新日</dt>
+    <dd><time datetime="2019-12-21">2019年12月21日</time></dd>
+  </dl>
+  <aside>
+    <ul class="information">
+      <li>本書は，<a href="https://gihyo.jp/book/2020/978-4-297-11125-0" target="_blank">2019年12月21日に発売された書籍</a>の電子版です。</li>
+      <li class="need-login">ご購入には会員登録・ログインが必要です</li>
+      <li class="corporate"><a href="/dp/help/buy/bulkpurchase">学校・法人等団体でのご利用について</a></li>
+    </ul>
+    <dl id="productPrice">
+<dt><span class="name">EPUB/PDFセット</span><span class="buy">2,880円 <a id="pid402724" href="#cartAdd" title="カートに入れる">カートに入れる<div class="option" title="購入オプション">▼<ul><li title="通常購入">自分用に購入する</li><li class="gift" title="ギフトコードを購入">ギフトとして購入する</li></ul></div></a></span></dt><dd><span class="page"><span itemprop="numberOfPages">400</span>ページ相当</span><span class="pdf">PDF</span> <span class="epub">EPUB：リフロー</span> </dd>
+
+    </dl>
+  </aside>
+  <aside id="social">
+    <ul>
+      <li class="twitter"><a href="https://twitter.com/search?q=https://gihyo.jp/dp/ebook/2019/978-4-297-11126-7" class="twitter--list">リスト</a><a href="http://twitter.com/share" class="twitter-share-button" data-url="https://gihyo.jp/dp/ebook/2019/978-4-297-11126-7" data-text="［改訂新版］jQueryポケットリファレンス #gihyoDP" data-count="none" data-lang="ja">ツイート</a></li>
+      <li class="facebook"><div class="fb-like" data-href="https://gihyo.jp/dp/ebook/2019/978-4-297-11126-7" data-send="false" data-layout="box_count" data-width="450" data-show-faces="false" data-share="true"></div></li>
+      <li class="hatena"><a href="http://b.hatena.ne.jp/entry/https://gihyo.jp/dp/ebook/2019/978-4-297-11126-7" class="hatena-bookmark-button" data-hatena-bookmark-layout="vertical-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="//b.hatena.ne.jp/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a></li>
+    </ul>
+  </aside>
+  <div id="productDetail">
+    <section id="detail">
+      <h2>概要</h2>
+<p>JavaScriptの定番ライブラリ「jQuery」の最後発で最新なリファレンスブック登場！
+初版はおよそ9年前に発売されましたが，<wbr/>あまたのバージョンアップ版の要望に応え，<wbr/>ようやく筆者が重い腰を上げて最新版で書き上げてくれました。ほかにもたくさんのJavaScriptライブラリがありますが，<wbr/>さまざまな有名サイトで使用され，<wbr/>そのメンテナンスやサイトのバージョンアップなどにもニーズがあるかと思われます。いまやWebデザイナーでもJavaScriptをかくことが要求され当然のように依頼されることもあります。jQueryの学習と知りたい機能を探すことができるリファレンス，<wbr/>いいところどりのポケットリファレンスでWebをもっとよくしていきませんか！</p><h3>こんな方におすすめ</h3>
+<ul><li>Java Scriptを活用しているデザイナー，<wbr/>プログラマー</li><li>jQueryを使用して開発されたシステムのメンテナンスやバージョンアップの参考に</li></ul>
+<h3>著者から一言</h3>
+<p>早いもので，<wbr/>本書の第1版が出版されてから10年近い月日が経過しました。プログラミングの世界は進歩が速く，<wbr/>Webアプリケーションの開発を取り巻く環境も，<wbr/>この10年の間に大きく変化しています。ブラウジングに使われるデバイスはPCよりスマートフォンやタブレットの占める割合のほうが多くなっていますし，<wbr/>アプリケーション開発全体の中でもフロントサイドの比重は年々高くなっている印象があります。<br />
+JavaScript周辺も，<wbr/>ずいぶんと変わりました。ES5が登場し，<wbr/>ブラウザごとの差異もほぼ解消されましたし，<wbr/>React，<wbr/>Vue等の新しいJavaScriptフレームワークが登場したことで，<wbr/>高度なアプリケーション開発もどんどん効率的になってきています。<br />
+JavaScriptライブラリとしては古株のjQueryも，<wbr/>目立った機能追加や変更は多くないものの，<wbr/>着実に進化を続けています。本書の第1版ではバージョン1.4をベースに解説していましたが，<wbr/>今回，<wbr/>現時点での最新版であるバージョン3系ですべて書き直しました。一見，<wbr/>メジャーバージョン2つ分一気にジャンプアップしたようにも見えますが，<wbr/>これはjQueryがIE8以前をサポートするバージョン1系とモダンブラウザのみをサポートするバージョン2系に分岐していたことによるものです。バージョン2を飛ばしたわけではなく，<wbr/>バージョン1とバージョン2を整理統合した形でバージョン3になった，<wbr/>と理解していただくとよいと思います。<br />
+なお，<wbr/>第1版で簡単に紹介していたjQueryプラグインの章については，<wbr/>既存のプラグインに古いままメンテナンスされていないものが多いことや，<wbr/>現場でもさほど利用頻度が高くないことから，<wbr/>今回は潔くカットしました。代わりにより実践的なトピックとして，<wbr/>svg.jsと組み合わせてベクターグラフィックでグラフを描画する例を取り上げています。
+フロントエンド開発の最初のステップとしてこれからjQueryを学ぶ方，<wbr/>すでにjQueryをお使いでリファレンスとして手元に置きたい方にとって，<wbr/>本書が一助となれば幸いです。</p><section id="sample"><h2>サンプル</h2><a href="https://image.gihyo.co.jp/assets/files/book/2020/978-4-297-11125-0/9784297111250-01.png"><img src="https://image.gihyo.co.jp/assets/images/reading.gif" data-image="https://image.gihyo.co.jp/assets/files/book/2020/978-4-297-11125-0/thumb/TH400_9784297111250-01.png,https://image.gihyo.co.jp/assets/files/book/2020/978-4-297-11125-0/9784297111250-01.png" width="400" height="533" alt="sample"/></a><a href="https://image.gihyo.co.jp/assets/files/book/2020/978-4-297-11125-0/9784297111250-02.png"><img src="https://image.gihyo.co.jp/assets/images/reading.gif" data-image="https://image.gihyo.co.jp/assets/files/book/2020/978-4-297-11125-0/thumb/TH400_9784297111250-02.png,https://image.gihyo.co.jp/assets/files/book/2020/978-4-297-11125-0/9784297111250-02.png" width="400" height="533" alt="sample"/></a><a href="https://image.gihyo.co.jp/assets/files/book/2020/978-4-297-11125-0/9784297111250-03.png"><img src="https://image.gihyo.co.jp/assets/images/reading.gif" data-image="https://image.gihyo.co.jp/assets/files/book/2020/978-4-297-11125-0/thumb/TH400_9784297111250-03.png,https://image.gihyo.co.jp/assets/files/book/2020/978-4-297-11125-0/9784297111250-03.png" width="400" height="533" alt="sample"/></a><a href="https://image.gihyo.co.jp/assets/files/book/2020/978-4-297-11125-0/9784297111250-04.png"><img src="https://image.gihyo.co.jp/assets/images/reading.gif" data-image="https://image.gihyo.co.jp/assets/files/book/2020/978-4-297-11125-0/thumb/TH400_9784297111250-04.png,https://image.gihyo.co.jp/assets/files/book/2020/978-4-297-11125-0/9784297111250-04.png" width="400" height="533" alt="sample"/></a><a href="https://image.gihyo.co.jp/assets/files/book/2020/978-4-297-11125-0/9784297111250-05.png"><img src="https://image.gihyo.co.jp/assets/images/reading.gif" data-image="https://image.gihyo.co.jp/assets/files/book/2020/978-4-297-11125-0/thumb/TH400_9784297111250-05.png,https://image.gihyo.co.jp/assets/files/book/2020/978-4-297-11125-0/9784297111250-05.png" width="400" height="533" alt="sample"/></a></section>
+    </section>
+    <section id="content">
+      <h2>目次</h2>
+<div id="bookSearch">
+<form id="bookSearchForm" action="search" method="post">
+  <input type="search" name="query" id="bookSearchText" title="本書内を検索するキーワードを入力" placeholder="本書内のキーワード" required="required" value="">
+  <input type="hidden" name="code" value="40381">
+  <input type="submit" id="bookSearchSubmit" value="検索" title="検索する">
+</form>
+</div><h3>1章　WebとjQueryの基本</h3>
+<ul class="toc"></li>
+<li>1.1　Webページを構成する要素</li>
+<li>1.2　Webの仕組みとAjax</li>
+<li>1.3　Ajaxアプリケーション・ライブラリjQuery</li>
+<li></ul>
+<h3>2章　開発環境</h3>
+<ul class="toc"></li>
+<li>2.1　環境を整える</li>
+<li>2.2　jQueryの入手</li>
+<li>2.3　jQueryの導入</li>
+<li>2.4　jQueryを利用するWebページ</li>
+<li>2.5　CDNを利用する</li>
+<li></ul>
+<h3>3章　jQueryのコア・オブジェクト</h3>
+<ul class="toc"></li>
+<li>3.1　「jQuery」オブジェクト</li>
+<li>3.2　jQueryの別名「$」</li>
+<li>3.3　jQueryメソッド</li>
+<li>3.4　セレクタを用いてDOM要素の集合を取得する</li>
+<li>3.5　HTML文字列からjQueryオブジェクトを生成する</li>
+<li>3.6　DOM要素からjQueryオブジェクトを生成する</li>
+<li>3.7　$(document).ready()の短縮</li>
+<li>3.8　$(window).on('load')と$(document).ready()</li>
+<li>3.9　readyイベントの保留</li>
+<li>3.10　readyイベント時のエラー</li>
+<li>3.11　他のJavaScriptライブラリとの共存</li>
+<li>3.12　jQueryオブジェクトのプロパティ</li>
+<li></ul>
+<h3>4章　DOMの操作</h3>
+<ul class="toc"></li>
+<li>4.1　要素内の最後に，要素，HTML，jQueryオブジェクトを挿入する</li>
+<li>4.2　要素，HTML，jQueryオブジェクトを要素の末尾に挿入する</li>
+<li>4.3　要素内の先頭に，要素，HTML，jQueryオブジェクトを挿入する</li>
+<li>4.4　要素，HTML，jQueryオブジェクトを要素の先頭に挿入する</li>
+<li>4.5　要素の後ろに，要素，HTML，jQueryオブジェクトを挿入する</li>
+<li>4.6　要素の前に，要素，HTML，jQueryオブジェクトを挿入する</li>
+<li>4.7　要素を複製する</li>
+<li>4.8　要素，HTML，jQueryオブジェクトを要素の後ろに挿入する</li>
+<li>4.9　要素，HTML，jQueryオブジェクトを要素の前に挿入する</li>
+<li>4.10　要素にクラス指定を追加する</li>
+<li>4.11　要素にクラスが指定されているか調べる</li>
+<li>4.12　要素からCSSクラス指定を削除する</li>
+<li>4.13　要素を削除する</li>
+<li>4.14　要素を一時的に削除する</li>
+<li>4.15　要素のすべての子ノードを削除する</li>
+<li>4.16　要素の最初のアトリビュート値を取得する</li>
+<li>4.17　要素に対してアトリビュート値を設定する</li>
+<li>4.18　要素から指定したアトリビュートを削除する</li>
+<li>4.19　すべての対象要素を置換する</li>
+<li>4.20　対象要素をすべて置換する</li>
+<li>4.21　要素それぞれに親要素を追加する</li>
+<li>4.22　要素の親要素を削除する</li>
+<li>4.23　要素をまとめて親要素を追加する</li>
+<li>4.24　要素それぞれの内側に親要素を追加する</li>
+<li>4.25　要素からHTML文字列を取得する</li>
+<li>4.26　要素にHTML文字列を設定する</li>
+<li>4.27　要素からテキスト文字列を取得する</li>
+<li>4.28　要素にテキスト文字列を設定する</li>
+<li>4.29　フォーム要素から値を取得する</li>
+<li>4.3　フォーム要素に値を設定する</li>
+<li>4.31　プロパティを取得・設定する</li>
+<li>4.32　プロパティを削除する</li>
+<li></ul>
+<h3>5章　セレクタ</h3>
+<ul class="toc"></li>
+<li>5.1　全選択</li>
+<li>5.2　id</li>
+<li>5.3　クラス</li>
+<li>5.4　要素</li>
+<li>5.5　複数のセレクタをまとめて使う</li>
+<li>5.6　インデックスによるセレクタ</li>
+<li>5.7　コンテンツの内容によるセレクタ</li>
+<li>5.8　子ノードのセレクタ</li>
+<li>5.9　階層のセレクタ</li>
+<li>5.10　可視条件のセレクタ</li>
+<li>5.11　フォームのセレクタ</li>
+<li>5.12　属性のセレクタ</li>
+<li>5.13　拡張セレクタ</li>
+<li>5.14　セレクタ文字のエスケープ</li>
+<li></ul>
+<h3>6章　jQueryオブジェクトの走査</h3>
+<ul class="toc"></li>
+<li>6.1　要素をインデックス値で特定する</li>
+<li>6.2　要素の集合から条件にマッチした要素を削除する</li>
+<li>6.3　条件にマッチする子ノードを持つ要素の集合を得る</li>
+<li>6.4　各要素を関数に通して処理する</li>
+<li>6.5　インデックス値の範囲で要素を抽出する</li>
+<li>6.6　条件にマッチする要素を抽出する</li>
+<li>6.7　要素集合から子要素を抽出する</li>
+<li>6.8　条件にマッチした要素の兄弟要素を抽出する</li>
+<li>6.9　条件にマッチした要素の親要素を抽出する</li>
+<li>6.10　条件にマッチした要素の親要素を，範囲を限定して抽出する</li>
+<li>6.11　要素の前・後の兄弟要素をすべて抽出する</li>
+<li>6.12　要素の前・後の兄弟要素を，範囲を限定して抽出する</li>
+<li>6.13　最も近くの条件にマッチする親要素を得る</li>
+<li>6.14　条件にマッチする要素を子孫の階層から探索する</li>
+<li>6.15　最も近い「配置済み」の親要素を得る</li>
+<li>6.16　要素集合に要素を追加する</li>
+<li>6.17　テキストノードも含めて，要素の子ノードを抽出する</li>
+<li>6.18　1つ前の状態のjQueryオブジェクトを返す</li>
+<li>6.19　1つ前の状態のjQueryオブジェクトを結合する</li>
+<li>6.20　最初・最後の要素を抽出する</li>
+<li>6.21　前・次の要素を抽出する</li>
+<li>6.22　要素が条件にマッチするかチェックする</li>
+<li></ul>
+<h3>7章　イベント操作</h3>
+<ul class="toc"></li>
+<li>7.1　イベントオブジェクト</li>
+<li>7.2　イベントオブジェクトのメソッド群</li>
+<li>7.3　マウスクリック</li>
+<li>7.4　ダブルクリック</li>
+<li>7.5　マウスの移動</li>
+<li>7.6　マウスボタンを押す・離す</li>
+<li>7.7　マウスカーソルの要素への出入り</li>
+<li>7.8　マウスカーソルの出入りに応じ，それぞれの処理を実行する</li>
+<li>7.9　フォーカスの移動</li>
+<li>7.10　キーを押す・離す</li>
+<li>7.11　フォーム要素の変更時イベント</li>
+<li>7.12　テキストの選択</li>
+<li>7.13　フォーム送信のイベント</li>
+<li>7.14　ブラウザウィンドウのリサイズを検出する</li>
+<li>7.15　スクロールを検出する</li>
+<li>7.16　イベントにイベントハンドラを割り当てる</li>
+<li>7.17　イベントハンドラを解除する</li>
+<li>7.18　イベントを発火する</li>
+<li>7.19　1度だけ呼び出したいイベントハンドラを割り当てる</li>
+<li></ul>
+<h3>8章　jQueryのCSS操作</h3>
+<ul class="toc"></li>
+<li>8.1　CSSプロパティの取得</li>
+<li>8.2　CSSスタイルの指定</li>
+<li>8.3　CSSスタイルの一括指定</li>
+<li>8.4　要素の高さを調べる</li>
+<li>8.5　要素の高さを設定する</li>
+<li>8.6　要素の幅を調べる</li>
+<li>8.7　要素の幅を設定する</li>
+<li>8.8　要素のinnerHeightを調べる</li>
+<li>8.9　要素のinnerWidthを調べる</li>
+<li>8.10　要素のouterHeightを調べる</li>
+<li>8.11　要素のouterWidthを調べる</li>
+<li>8.12　要素の表示位置を調べる・設定する</li>
+<li>8.13　要素の表示位置を調べる</li>
+<li>8.14　縦方向のスクロール位置を取得する・設定する</li>
+<li>8.15　横方向のスクロール位置を取得する・設定する</li>
+<li>8.16　クラスの指定あり・指定なしを切り替える</li>
+<li>8.17　独自のCSSプロパティを作成する</li>
+<li>8.18　単位なしで利用可能なCSSプロパティの一覧を得る</li>
+<li></ul>
+<h3>9章　データ</h3>
+<ul class="toc"></li>
+<li>9.1　データの割当と解除</li>
+<li>9.2　データが割り当てられているか調べる</li>
+<li></ul>
+<h3>10章　エフェクト</h3>
+<ul class="toc"></li>
+<li>10.1　アニメーション効果の無効化</li>
+<li>10.2　フェード効果</li>
+<li>10.3　スライド効果</li>
+<li>10.4　表示と非表示</li>
+<li>10.5　カスタムアニメーション</li>
+<li>10.6　アニメーションを停止する</li>
+<li>10.7　視覚効果のキューを操作する</li>
+<li></ul>
+<h3>11章　Ajax</h3>
+<ul class="toc"></li>
+<li>11.1　Ajaxの設定パラメータ</li>
+<li>11.2　Ajaxの設定をコントロールする</li>
+<li>11.3　HTTPリクエストを送信してレスポンスを受け取る</li>
+<li>11.4　HTTPリクエストを送信し，受け取ったレスポンスをDOMに挿入する</li>
+<li>11.5　JSONエンコードされたデータをサーバから取得する</li>
+<li>11.6　JavaScriptファイルをサーバから取得する</li>
+<li>11.7　Ajaxのリクエストを送信し，レスポンスを受け取る</li>
+<li>11.8　Ajaxプレフィルタ</li>
+<li>11.9　Ajaxトランスポート</li>
+<li>11.10　Ajaxイベントハンドラ</li>
+<li>11.11　ヘルパー関数</li>
+<li></ul>
+<h3>12章　Callbacksオブジェクト</h3>
+<ul class="toc"></li>
+<li>12.1　Callbacksオブジェクトを生成する</li>
+<li>12.2　Callbacksオブジェクトにコールバックを追加する</li>
+<li>12.3　Callbacksオブジェクトを実行する</li>
+<li>12.4　コンテキストを指定してCallbacksオブジェクトを実行する</li>
+<li>12.5　Callbacksが実行されたか確認する</li>
+<li>12.6　Callbacksオブジェクトを無効化する・無効化されているか確認する</li>
+<li>12.7　Callbacksオブジェクトをロックする・ロックされているか確認する</li>
+<li>12.8　コールバック関数を削除する・Callbacksオブジェクトを空にする</li>
+<li></ul>
+<h3>13章　Deferredオブジェクト</h3>
+<ul class="toc"></li>
+<li>13.1　同期処理と非同期処理</li>
+<li>13.2　非同期処理とコールバック関数</li>
+<li>13.3　$.Deferredを使おう</li>
+<li>13.4　$.Deferred()ファクトリーメソッド</li>
+<li>13.5　promiseオブジェクトを返す</li>
+<li>13.6　Deferredの状態を調べる</li>
+<li>13.7　成功時・失敗時・進行中の処理を実行する</li>
+<li>13.8　処理を確定する・進行中の通知を発行する</li>
+<li>13.9　Deferredのコールバックを集中管理する</li>
+<li>13.10　複数のDeferredオブジェクトやPromiseオブジェクトを非同期に処理する</li>
+<li></ul>
+<h3>14章　ユーティリティ</h3>
+<ul class="toc"></li>
+<li>14.1　文字列の前後からホワイトスペースを除去する</li>
+<li>14.2　配列を操作する</li>
+<li>14.3　反復処理や条件判断に便利なメソッド</li>
+<li>14.4　その他のユーティリティメソッド</li>
+<li>14.5　jQueryオブジェクトに対する便利なメソッド</li>
+<li></ul>
+<h3>15章　SVGの操作</h3>
+<ul class="toc"></li>
+<li>15.1　SVGとは</li>
+<li>15.2　SVG.jsを導入しよう</li>
+<li>15.3　SVG.jsで簡単な図形を描いてみる</li>
+<li>15.4　SVG.jsでアニメーションを作る</li>
+<li>15.5　jQueryとSVG.jsでグラフを描く</li>
+</ul>
+    </section>
+    <section id="support">
+      <h2>サポート</h2>
+<p>現在サポート情報はありません。</p>
+    </section>
+  </div>
+  </div>
+<script defer="defer">try{twttr.widgets.load();FB.XFBML.parse();Hatena.Bookmark.BookmarkButton.setup();}catch(e){}</script>
+</div>    <div id="bookList">
+      <h2>商品一覧</h2>
+      <div id="topNavigation">
+        <div id="filter">
+          <form id="search" action="/dp" method="get">
+            <input type="search" name="query" id="searchText" title="検索する商品のキーワードを入力" placeholder="商品のキーワード" required="required" value=""/>
+            <input type="submit" id="searchSubmit" value="検索" title="検索する"/>
+          </form>
+          <div id="select">
+            <a href="" id="selectLabel" title="商品ジャンルを選択する"></a>
+            <div id="selectMenu">
+              <ul id="selectMenuBody"></ul>
+            </div>
+          </div>
+        </div>
+        <nav id="pagingTop">
+        </nav>
+      </div>
+      <ul itemprop="isPartOf" itemscope="itemscope" itemtype="http://www.schema.org/CollectionPage" id="listBook" class="list-book">
+      </ul>
+      <nav id="pagingBottom">
+      </nav>
+    </div>
+  </div>
+  <footer id="footer" itemscope="itemscope" itemtype="http://www.schema.org/WPFooter">
+    <div id="wait" class="hidden"></div>
+    <nav id="navigation" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
+      <ul id="navigationLink">
+        <li id="navLinkHome" class="current"><a itemprop="url" href="/dp" title="ストア" class="home">ストア</a></li>
+        <li id="navLinkMyPage"><a itemprop="url" href="/dp/my-page" title="マイページ" class="mypage">マイページ</a></li>
+        <li id="navLinkInfor"><a itemprop="url" href="/dp/information" title="お知らせ" class="information">お知らせ</a></li>
+        <li id="navLinkHelp"><a itemprop="url" href="/dp/help" title="ヘルプ" class="help">ヘルプ</a></li>
+      </ul>
+    </nav>
+    <nav id="function" itemscope="itemscope" itemtype="http://www.schema.org/WPSideBar">
+      <div id="backgroundWrapper" style="display:block;opacity:0.4"></div>
+      <div id="navInfor"></div>
+    </nav>
+    <div id="storeInformation">
+      <ul id="footerLink">
+        <li>Twitter: <a href="https://twitter.com/gihyoDP">@gihyoDP</a></li>
+        <li><a href="/dp/help/about/site">このサイトについて</a></li>
+        <li><a href="/dp/help/about/terms">利用規約</a></li>
+        <li><a href="/dp/help/about/privacy">プライバシーポリシー</a></li>
+        <li><a href="/dp/help/about/law">特定商取引法に基づく表示</a></li>
+      </ul>
+      <p id="storeCopyright"><small>Copyright © 2020 <span class="reserved">All Rights Reserved by</span> <a href="/book">Gijutsu-Hyohron Co., Ltd.</a></small></p>
+    </div>
+  </footer>
+<script>var params={"url":"https:\/\/gihyo.jp\/dp\/ebook\/2019\/978-4-297-11126-7","path":"\/dp\/ebook\/2019\/978-4-297-11126-7","targetId":"978-4-297-11126-7","parent":"\/dp\/genre\/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E3%83%BB%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E9%96%8B%E7%99%BA","overlay":true,"body":"    <div id=\"bookList\">\n      <h2>\u5546\u54c1\u4e00\u89a7<\/h2>\n      <div id=\"topNavigation\">\n        <div id=\"filter\">\n          <form id=\"search\" action=\"\/dp\" method=\"get\">\n            <input type=\"search\" name=\"query\" id=\"searchText\" title=\"\u691c\u7d22\u3059\u308b\u5546\u54c1\u306e\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\" placeholder=\"\u5546\u54c1\u306e\u30ad\u30fc\u30ef\u30fc\u30c9\" required=\"required\" value=\"\"\/>\n            <input type=\"submit\" id=\"searchSubmit\" value=\"\u691c\u7d22\" title=\"\u691c\u7d22\u3059\u308b\"\/>\n          <\/form>\n          <div id=\"select\">\n            <a href=\"\" id=\"selectLabel\" title=\"\u5546\u54c1\u30b8\u30e3\u30f3\u30eb\u3092\u9078\u629e\u3059\u308b\"><\/a>\n            <div id=\"selectMenu\">\n              <ul id=\"selectMenuBody\"><\/ul>\n            <\/div>\n          <\/div>\n        <\/div>\n        <nav id=\"pagingTop\">\n        <\/nav>\n      <\/div>\n      <ul itemprop=\"isPartOf\" itemscope=\"itemscope\" itemtype=\"http:\/\/www.schema.org\/CollectionPage\" id=\"listBook\" class=\"list-book\">\n      <\/ul>\n      <nav id=\"pagingBottom\">\n      <\/nav>\n    <\/div>","isLogin":false,"dialog":"<aside id=\"dialog\" class=\"dialog-login\" style=\"opacity:0\">\n  <div id=\"dialogBody\">\n    <div id=\"gihyoAccount\">\n      <h2>\u30e1\u30fc\u30eb\u30a2\u30c9\u30ec\u30b9\u3067\u30ed\u30b0\u30a4\u30f3<\/h2>\n      <form action=\"?login\" method=\"post\">\n        <input type=\"hidden\" name=\"fid\" value=\"\"\/>\n        <dl>\n          <dt>\u30a2\u30ab\u30a6\u30f3\u30c8<\/dt>\n          <dd><input type=\"email\" name=\"account\" placeholder=\"\u30e1\u30fc\u30eb\u30a2\u30c9\u30ec\u30b9\" required=\"required\" title=\"\u30a2\u30ab\u30a6\u30f3\u30c8\u306e\u30e1\u30fc\u30eb\u30a2\u30c9\u30ec\u30b9\u3092\u5165\u529b\"\/><\/dd>\n          <dt>\u30d1\u30b9\u30ef\u30fc\u30c9<\/dt>\n          <dd><input type=\"password\" name=\"password\" placeholder=\"\u30d1\u30b9\u30ef\u30fc\u30c9\" required=\"required\" title=\"\u30a2\u30ab\u30a6\u30f3\u30c8\u306e\u30d1\u30b9\u30ef\u30fc\u30c9\u3092\u5165\u529b\"\/><\/dd>\n        <\/dl>\n        <p id=\"loginButton\"><input type=\"submit\" value=\"\u30ed\u30b0\u30a4\u30f3\" title=\"\u30ed\u30b0\u30a4\u30f3\u3059\u308b\"\/><\/p>\n        <ul id=\"loginFunction\">\n          <li><a href=\"\/dp\/help\/buy\/forgot\">\u30d1\u30b9\u30ef\u30fc\u30c9\u3092\u304a\u5fd8\u308c\u306e\u65b9<\/a><\/li>\n          <li><a href=\"\/dp\/help\/buy\/account\">\u65b0\u898f\u767b\u9332\u3092\u3054\u5e0c\u671b\u306e\u65b9<\/a><\/li>\n        <\/ul>\n      <\/form>\n    <\/div>\n    <div id=\"externalSite\">\n      <h2>\u5916\u90e8\u30b5\u30fc\u30d3\u30b9\u3067\u30ed\u30b0\u30a4\u30f3<\/h2>\n      <ul>\n      <li class=\"google\"><a href=\"https:\/\/gihyo.jp\/auth\/google\">Google<\/a><\/li>\n      <li class=\"facebook\"><a href=\"https:\/\/gihyo.jp\/auth\/facebook\">Facebook<\/a><\/li>\n      <li class=\"yahoo\"><a href=\"https:\/\/gihyo.jp\/auth\/yahoojp\">Yahoo! JAPAN<\/a><\/li>\n      <\/ul>\n      <p><a href=\"\/dp\/help\/buy\/external\">\u5916\u90e8\u30b5\u30fc\u30d3\u30b9\u3067\u306e\u30ed\u30b0\u30a4\u30f3\u306b\u3064\u3044\u3066<\/a><\/p>\n    <\/div>\n    <p id=\"close\"><a href=\"#close\" title=\"\u9589\u3058\u308b\">\u9589\u3058\u308b<\/a><\/p>\n  <\/div>\n<\/aside>"}</script>
+  <script>var asyncCall=function(){var e=Array.prototype.slice,a=Function.prototype.bind||function(j){var a=this,b=e.call(arguments,1);return function(){var c=e.call(arguments);return a.apply(j,b.concat(c))}},f=a.call(a,Function.prototype.call),b=f(e),c=f(a),d=f(Function.prototype.apply);if("undefined"!==typeof process)a=function(){var a=b(arguments);process.nextTick(d(c,null,a))};else if("function"===typeof setImmediate)a=function(){var a=b(arguments);setImmediate(d(c,null,a))};else if("function"===typeof MessageChannel){var g=new MessageChannel,h=[];g.port1.onmessage=function(){h.shift()()};a=function(){var a=b(arguments);h.push(d(c,null,a));g.port2.postMessage(0)}}else a=function(){var a=b(arguments);setTimeout(d(c,null,a),0)};return a}();window.onerror=function(mes,fname,lnum){var erIgnore=['top.GLOBALS','originalCreateNotification','canvas.contentDocument','fb_xd_fragment','Script error.'];for(i=0;i<erIgnore.length;i++){if(mes.indexOf(erIgnore[i])>-1){return false;}};var mes='message:'+mes+', file:'+fname+', line:'+lnum+', href:'+location.href+', UA:'+window.navigator.userAgent;ga('send','event','Error','JSError',mes);};</script>
+  <script src="//platform.twitter.com/widgets.js" id="twitter-wjs" async defer></script>
+  <script src="//connect.facebook.net/ja_JP/sdk.js#xfbml=1&appId=185201618169441&version=v2.8" id="facebook-jssdk" async defer></script>
+  <script src="//apis.google.com/js/platform.js" async defer></script>
+  <script src="//b.hatena.ne.jp/js/bookmark_button.js" charset="utf-8" async defer></script>
+</body>
+</html>

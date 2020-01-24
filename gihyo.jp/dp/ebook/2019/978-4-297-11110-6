@@ -1,0 +1,392 @@
+<!DOCTYPE HTML>
+<html lang="ja" class="pc">
+<head>
+  <meta charset="UTF-8">
+  <title>WEB+DB PRESS Vol.114 | Gihyo Digital Publishing … 技術評論社の電子書籍</title>
+  <meta http-equiv="Content-Style-Type" content="text/css"/>
+  <meta http-equiv="Content-Script-Type" content="application/javascript"/>
+  <meta name="description" content="特集1安全運用のためのベストプラクティス！AWS/GCPセキュア化計画本特集では，AWSとGCPでの安全な設定の指針を解説します。クラウド利用者にとってセキュリティは最優先事項です。また，クラウドには，従来のオンプレミスとは異なる特有のセキュリティ項目があります。本特集では，AWSとGCPそれぞれの特性を踏まえて，最小の工数で高いセキュリティレベルを実現する方法を説明します。さらに，セキュリティで必須となる監査において，結果の集中管理と可視化を行う方法を紹介します。特集2生体認証でさよならパスワード作って学ぶWebAuthnWebAuthnは，2019年3月にW3Cで標準化されたパスワードの代わりに公開鍵を使用するWeb認証の仕様です。フィッシング被害を撲滅する安全性と，簡単にログインできる利便性を両立します。本特集では，まず第1章で，パスワードや2段階認証など従来の認証が抱える問題を，WebAuthnがどのように解決するのか紹介します。第2章でWebAuthnの仕様を詳しく解説します。第3章からは実践編として，WebAuthnの一番の魅力であるパスワードレス認証を実装します。第3章で開発環境を構築したうえで，第4章では公開鍵の生成と登録処理を，第5章では署名の生成と認証処理を実装します。特集3カード発行，決済，個人間送金の舞台裏Kyash開発ノウハウ大公開モバイルアプリからプリペイド式Visaカードの発行や個人間送金が誰でも簡単に行えるKyash。リアルカードを発行すれば，オンラインだけでなく実店舗でも決済ができます。本特集では，Kyashのカード決済システムやカード情報を守るためのセキュリティ，そして2019年10月から提供を開始したカード発行と決済を提供する企業向けサービスKyash Directの設計と実装を紹介します。19周年記念エッセイ経験，技術力の向上，技術の進化を経た今，思うこと過去の自分へコードレビューこれまでに，みなさんもたくさんのコードを書いてきたと思います。自分のコードを年月を経て今見返すと，自分が成長したことにより，また取り巻く技術が進化したことにより，当時は気付かなかったことが見えてくるのではないでしょうか。本エッセイでは，各分野で活躍されているエンジニアの方々に，過去の自分のコードに対しレビューをしていただきます。Web開発者の方だけではなく幅広いジャンルの方々にご執筆いただいているので，新しい発見があるはずです。"/>
+  <meta name="keywords" content="電子書籍,電子出版,EPUB,PDF,技術評論社"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="format-detection" content="telephone=no"/>
+  <link rel="related" href="http://gihyo.jp/dp/catalogs.opds" type="application/atom+xml;profile=opds-catalog" title="Gihyo Digital Publishing OPDS Catalog"/>
+  <link rel="shortcut icon" href="/assets/templates/gdp/favicon.ico" type="image/vnd.microsoft.icon"/>
+  <link rel="apple-touch-icon-precomposed" href="/dp/assets/gdp-icon.png"/>
+  <!--[if lt IE 9]>
+    <script>var msie=8;</script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="/dp/assets/js/html5shiv.min.js"></script>
+    <script src="//css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <script src="/dp/assets/js/selectivizr-min.js"></script>
+    <script src="/dp/assets/js/addEventListener.min.js"></script>
+    <script src="/dp/assets/js/textContent.min.js"></script>
+  <![endif]-->
+  <!--[if lte IE 9]>
+    <script src="/dp/assets/js/classList.min.js" defer></script>
+  <![endif]-->
+  <link rel="stylesheet" href="/dp/assets/style/store1217.css" type="text/css" media="all"/>
+  <script src="/dp/assets/js/gdpFunction0411.min.js" defer></script>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:site" content="@gihyoDP"/>
+  <meta property="og:title" content="WEB+DB PRESS Vol.114 | Gihyo Digital Publishing … 技術評論社の電子書籍"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:description" content="特集1安全運用のためのベストプラクティス！AWS/GCPセキュア化計画本特集では，AWSとGCPでの安全な設定の指針を解説します。クラウド利用者にとってセキュリティは最優先事項です。また，クラウドには，従来のオンプレミスとは異なる特有のセキュリティ項目があります。本特集では，AWSとGCPそれぞれの特性を踏まえて，最小の工数で高いセキュリティレベルを実現する方法を説明します。さらに，セキュリティで必須となる監査において，結果の集中管理と可視化を行う方法を紹介します。特集2生体認証でさよならパスワード作って学ぶWebAuthnWebAuthnは，2019年3月にW3Cで標準化されたパスワードの代わりに公開鍵を使用するWeb認証の仕様です。フィッシング被害を撲滅する安全性と，簡単にログインできる利便性を両立します。本特集では，まず第1章で，パスワードや2段階認証など従来の認証が抱える問題を，WebAuthnがどのように解決するのか紹介します。第2章でWebAuthnの仕様を詳しく解説します。第3章からは実践編として，WebAuthnの一番の魅力であるパスワードレス認証を実装します。第3章で開発環境を構築したうえで，第4章では公開鍵の生成と登録処理を，第5章では署名の生成と認証処理を実装します。特集3カード発行，決済，個人間送金の舞台裏Kyash開発ノウハウ大公開モバイルアプリからプリペイド式Visaカードの発行や個人間送金が誰でも簡単に行えるKyash。リアルカードを発行すれば，オンラインだけでなく実店舗でも決済ができます。本特集では，Kyashのカード決済システムやカード情報を守るためのセキュリティ，そして2019年10月から提供を開始したカード発行と決済を提供する企業向けサービスKyash Directの設計と実装を紹介します。19周年記念エッセイ経験，技術力の向上，技術の進化を経た今，思うこと過去の自分へコードレビューこれまでに，みなさんもたくさんのコードを書いてきたと思います。自分のコードを年月を経て今見返すと，自分が成長したことにより，また取り巻く技術が進化したことにより，当時は気付かなかったことが見えてくるのではないでしょうか。本エッセイでは，各分野で活躍されているエンジニアの方々に，過去の自分のコードに対しレビューをしていただきます。Web開発者の方だけではなく幅広いジャンルの方々にご執筆いただいているので，新しい発見があるはずです。"/>
+  <meta property="og:url" content="https://gihyo.jp/dp/ebook/2019/978-4-297-11110-6"/>
+  <meta property="og:image" content="https://image.gihyo.co.jp/assets/images/gdp/2019/978-4-297-11110-6.jpg"/>
+  <meta property="og:site_name" content="Gihyo Digital Publishing"/>
+  <meta property="fb:app_id" content="185201618169441"/>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-4149703-1', 'auto');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+  </script>
+</head>
+<body itemscope="itemscope" itemtype="http://schema.org/WebPage" class="page-home">
+  <header id="header" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
+    <h1 class="home-title">Gihyo Digital Publishing</h1>
+    <h2 class="home-subtitle">技術評論社の電子書籍サイト</h2>
+    <nav id="headerFunction">
+      <div id="login">
+        <a href="#login" title="ログイン・会員登録">ログイン</a>
+      </div>
+      <div id="cart">
+        <a href="/dp/cart" title="カートは空です">カート</a>
+      </div>
+    </nav>
+  </header>
+  <div id="main">
+    <noscript><div id="noscript">
+      <p>本サイトではJavaScriptを使用しております。JavaScriptが無効な状態ではご利用いただけません。</p>
+    </div></noscript>
+
+<div id="overlayWindow" class="book-infor" itemscope itemtype="http://schema.org/Book" typeof="product:Product" xmlns:product="http://search.yahoo.com/searchmonkey/product/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:media="http://search.yahoo.com/searchmonkey/media/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:currency="http://search.yahoo.com/searchmonkey-datatype/currency/" style="display:block;opacity:1">
+  <header id="overlayHeader">
+    <h1>書籍概要</h1>
+    <nav id="overlayFunction">
+      <p id="close"><a href="/dp" title="閉じる">閉じる</a></p>
+      <ul id="jump">
+        <li id="detailRef"><a href="#title" title="概要を見る">概要</a></li>
+        <li id="contentRef"><a href="#content" title="目次を見る">目次</a></li>
+        <li id="supportRef"><a href="#support" title="サポート情報を見る">サポート</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div id="bookInforMain">
+  <hgroup id="title">
+
+    <h1 id="bookTitle" property="rdfs:label" itemprop="name">WEB+DB PRESS Vol.114</h1><p id="bookSeries">→<a href="/dp/series/WEB%2BDB%20PRESS">バックナンバー一覧</a></p>
+  </hgroup>
+  <aside id="bookCover" rel="rdfs:seeAlso media:image"><img src="https://image.gihyo.co.jp/assets/images/gdp/2019/978-4-297-11110-6.jpg" alt="WEB+DB PRESS Vol.114"/></aside>
+  <dl id="publicationData" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+    
+    
+    <dt>発売日</dt>
+    <dd><time datetime="2019-12-23">2019年12月23日</time></dd>
+    <dt>更新日</dt>
+    <dd><time datetime="2019-12-23">2019年12月23日</time></dd>
+  </dl>
+  <aside>
+    <ul class="information">
+      <li>本書は，<a href="https://gihyo.jp/magazine/wdpress/archive/2020/vol114" target="_blank">2019年12月23日に発売された雑誌</a>の電子版です。</li>
+      <li class="need-login">ご購入には会員登録・ログインが必要です</li>
+      <li class="corporate"><a href="/dp/help/buy/bulkpurchase">学校・法人等団体でのご利用について</a></li>
+    </ul>
+    <dl id="productPrice">
+<dt><span class="name">EPUB/PDFセット</span><span class="buy">1,628円 <a id="pid402728" href="#cartAdd" title="カートに入れる">カートに入れる<div class="option" title="購入オプション">▼<ul><li title="通常購入">自分用に購入する</li><li class="gift" title="ギフトコードを購入">ギフトとして購入する</li></ul></div></a></span></dt><dd><span class="page"><span itemprop="numberOfPages">160</span>ページ相当</span><span class="pdf">PDF</span> <span class="epub">EPUB：リフロー</span> </dd>
+<dt><span class="name">定期購読（EPUB/PDFセット）</span><span class="buy">年間一括9,768円／毎号1,628円 <a id="pidSubscribe" href="/dp/subscription/wdpress" class="subscription" title="定期購読を申し込む">定期購読を申し込む</a></span></dt><dd>お申し込み画面で選択してください</dd>
+
+    </dl>
+  </aside>
+  <aside id="social">
+    <ul>
+      <li class="twitter"><a href="https://twitter.com/search?q=https://gihyo.jp/dp/ebook/2019/978-4-297-11110-6" class="twitter--list">リスト</a><a href="http://twitter.com/share" class="twitter-share-button" data-url="https://gihyo.jp/dp/ebook/2019/978-4-297-11110-6" data-text="WEB+DB PRESS Vol.114 #gihyoDP" data-count="none" data-lang="ja">ツイート</a></li>
+      <li class="facebook"><div class="fb-like" data-href="https://gihyo.jp/dp/ebook/2019/978-4-297-11110-6" data-send="false" data-layout="box_count" data-width="450" data-show-faces="false" data-share="true"></div></li>
+      <li class="hatena"><a href="http://b.hatena.ne.jp/entry/https://gihyo.jp/dp/ebook/2019/978-4-297-11110-6" class="hatena-bookmark-button" data-hatena-bookmark-layout="vertical-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="//b.hatena.ne.jp/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a></li>
+    </ul>
+  </aside>
+  <div id="productDetail">
+    <section id="detail">
+      <h2>概要</h2>
+<h3>
+<span class="category">特集1</span><br />
+<span class="chach">安全運用のためのベストプラクティス！</span><br />
+<span class="title">AWS/GCPセキュア化計画</span><br />
+</h3>
+
+<p>本特集では，<wbr/>AWSとGCPでの安全な設定の指針を解説します。クラウド利用者にとってセキュリティは最優先事項です。また，<wbr/>クラウドには，<wbr/>従来のオンプレミスとは異なる特有のセキュリティ項目があります。本特集では，<wbr/>AWSとGCPそれぞれの特性を踏まえて，<wbr/>最小の工数で高いセキュリティレベルを実現する方法を説明します。さらに，<wbr/>セキュリティで必須となる監査において，<wbr/>結果の集中管理と可視化を行う方法を紹介します。</p>
+
+
+
+<h3>
+<span class="category">特集2</span><br />
+<span class="chach">生体認証でさよならパスワード</span><br />
+<span class="title">作って学ぶWebAuthn</span>
+</h3>
+<p>WebAuthnは，<wbr/>2019年3月にW3Cで標準化されたパスワードの代わりに公開鍵を使用するWeb認証の仕様です。フィッシング被害を撲滅する安全性と，<wbr/>簡単にログインできる利便性を両立します。本特集では，<wbr/>まず第1章で，<wbr/>パスワードや2段階認証など従来の認証が抱える問題を，<wbr/>WebAuthnがどのように解決するのか紹介します。第2章でWebAuthnの仕様を詳しく解説します。第3章からは実践編として，<wbr/>WebAuthnの一番の魅力であるパスワードレス認証を実装します。第3章で開発環境を構築したうえで，<wbr/>第4章では公開鍵の生成と登録処理を，<wbr/>第5章では署名の生成と認証処理を実装します。<br />
+
+<h3>
+<span class="category">特集3</span><br />
+<span class="chach">カード発行，<wbr/>決済，<wbr/>個人間送金の舞台裏</span><br />
+<span class="title">Kyash開発ノウハウ大公開</span>
+</h3>
+<p>モバイルアプリからプリペイド式Visaカードの発行や個人間送金が誰でも簡単に行えるKyash。リアルカードを発行すれば，<wbr/>オンラインだけでなく実店舗でも決済ができます。本特集では，<wbr/>Kyashのカード決済システムやカード情報を守るためのセキュリティ，<wbr/>そして2019年10月から提供を開始したカード発行と決済を提供する企業向けサービスKyash Directの設計と実装を紹介します。</p>
+
+<h3>
+<span class="category">19周年記念エッセイ</span><br />
+<span class="chach">経験，<wbr/>技術力の向上，<wbr/>技術の進化を経た今，<wbr/>思うこと</span><br />
+<span class="title">過去の自分へコードレビュー</span>
+</h3>
+<p>これまでに，<wbr/>みなさんもたくさんのコードを書いてきたと思います。自分のコードを年月を経て今見返すと，<wbr/>自分が成長したことにより，<wbr/>また取り巻く技術が進化したことにより，<wbr/>当時は気付かなかったことが見えてくるのではないでしょうか。本エッセイでは，<wbr/>各分野で活躍されているエンジニアの方々に，<wbr/>過去の自分のコードに対しレビューをしていただきます。Web開発者の方だけではなく幅広いジャンルの方々にご執筆いただいているので，<wbr/>新しい発見があるはずです。</p>
+    </section>
+    <section id="content">
+      <h2>目次</h2>
+<div id="bookSearch">
+<form id="bookSearchForm" action="search" method="post">
+  <input type="search" name="query" id="bookSearchText" title="本書内を検索するキーワードを入力" placeholder="本書内のキーワード" required="required" value="">
+  <input type="hidden" name="code" value="40294">
+  <input type="submit" id="bookSearchSubmit" value="検索" title="検索する">
+</form>
+</div><h3>
+<span class="category">特集1</span><br />
+<span class="chach">安全運用のためのベストプラクティス！</span><br />
+<span class="title">AWS/GCPセキュア化計画</span>
+</h3>
+<ul class="toc">
+<li><span class="chapter">第1章</span>：クラウドのセキュリティ対策<br />
+クラウド事業者の考え方と責任範囲を把握する<span class="author">&hellip;&hellip;髙橋 祐真</span></li>
+<li><span class="chapter">第2章</span>：アカウント／プロジェクトのセキュア化<br />
+運用ルールを決め，集中的に管理する<span class="author">&hellip;&hellip;髙橋 祐真</span></li>
+<li><span class="chapter">第3章</span>：IAMのセキュア化<br />
+権限を理解し，リソースへのアクセスを制御する<span class="author">&hellip;&hellip;髙橋 祐真</span></li>
+<li><span class="chapter">第4章</span>：ネットワークのセキュア化<br />
+通信制御を行い，外部からの攻撃を防御する<span class="author">&hellip;&hellip;髙橋 祐真</span></li>
+<li><span class="chapter">第5章</span>：オブジェクトストレージのセキュア化<br />
+データを暗号化し，情報漏洩を回避する<span class="author">&hellip;&hellip;髙橋 祐真</span></li>
+<li><span class="chapter">第6章</span>：セキュリティ監査<br />
+セキュリティ標準に従い，最小工数で実施する<span class="author">&hellip;&hellip;髙橋 祐真</span></li>
+</ul>
+<h3>
+<span class="category">特集2</span><br />
+<span class="chach">生体認証でさよならパスワード</span><br />
+<span class="title">作って学ぶWebAuthn</span>
+</h3>
+<ul class="toc">
+<li><span class="chapter">第1章</span>：WebAuthnとは何か<br />
+簡単！ 安全！ Web新標準のパスワードレス認証<span class="author">&hellip;&hellip;加藤 圭佑</span></li>
+<li><span class="chapter">第2章</span>：WebAuthnのしくみ<br />
+公開鍵の登録から署名による認証まで<span class="author">&hellip;&hellip;加藤 圭佑</span></li>
+<li><span class="chapter">第3章</span>：開発環境の構築<br />
+WebAuthnライブラリの選定と設定<span class="author">&hellip;&hellip;加藤 圭佑</span></li>
+<li><span class="chapter">第4章</span>：登録処理の実装<br />
+公開鍵の生成と登録<span class="author">&hellip;&hellip;加藤 圭佑</span></li>
+<li><span class="chapter">第5章</span>：認証処理の実装<br />
+署名の生成と認証<span class="author">&hellip;&hellip;加藤 圭佑</span></li>
+</ul>
+<h3>
+<span class="category">特集3</span><br />
+<span class="chach">カード発行，決済，個人間送金の舞台裏</span><br />
+<span class="title">Kyash開発ノウハウ大公開</span>
+</h3>
+<ul class="toc">
+<li><span class="chapter">第1章</span>：Kyashとは何か<br />
+決済と送金が誰でも簡単にできる！<span class="author">&hellip;&hellip;山﨑 真，竹澤 友博，堀川 豊</span></li>
+<li><span class="chapter">第2章</span>：インフラでのカード情報保護<br />
+国際セキュリティ標準PCI DSSに基づく構築／運用<span class="author">&hellip;&hellip;平塚 貴之，岩藤 圭介，堀川 豊</span></li>
+<li><span class="chapter">第3章</span>：モバイルアプリでのカード情報保護<br />
+通信時の暗号化と，危険な操作の禁止／警告<span class="author">&hellip;&hellip;小西 裕介</span></li>
+<li><span class="chapter">第4章</span>：決済プラットフォームKyash Directの設計<br />
+マイクロサービスの課題を克服する<span class="author">&hellip;&hellip;岩藤 圭介</span></li>
+<li><span class="chapter">第5章</span>：Kyash Directに見るクリーンアーキテクチャの実装<br />
+シンプルなGo言語に共通ルールを取り入れる<span class="author">&hellip;&hellip;岩藤 圭介</span></li>
+</ul>
+<h3>
+<span class="category">19周年記念エッセイ</span><br />
+<span class="chach">経験，技術力の向上，技術の進化を経た今，思うこと</span><br />
+<span class="title">過去の自分へコードレビュー</span>
+</h3>
+<ul class="toc">
+<li><span class="chapter">第1章</span>：コンピュータと人間に優しいコードを<br />
+8年後の視点から自作OSを振り返る<span class="author">&hellip;&hellip;hikalium</span></li>
+<li><span class="chapter">第2章</span>：最適化と実用性とのバランス<br />
+ザウルスPDAへのSqueak Smalltalk移植とアプリ開発<span class="author">&hellip;&hellip;大島 芳樹</span></li>
+<li><span class="chapter">第3章</span>：AIとの会話を楽しくする「個性」<br />
+技術の進化に加えて，もう1つ必要なエッセンス<span class="author">&hellip;&hellip;宮路 洋一</span></li>
+<li><span class="chapter">第4章</span>：レビューイを不安から解放する<br />
+共同参加者としてのレビュアーの役割<span class="author">&hellip;&hellip;Yugui</span></li>
+</ul>
+
+<h3>連載</h3>
+<ul class="toc">
+<li>モダンPHPエンジニアへの道<br />
+【第5回】PHP 7.4で何が変わるのか ……プロパティの型付け／アロー関数の導入，preloadによる性能改善<span class="author">&hellip;&hellip;新倉 涼太</span></li>
+<li>Rubyのウラガワ ── Rubyインタプリタに学ぶデータ構造とアルゴリズム<br />
+【第5回】Rubyにおけるハッシュテーブルの内部実装 ……連鎖法から開番地法への進化の歴史<span class="author">&hellip;&hellip;笹田 耕一</span></li>
+<li>Goに入りては…… ── When In Go...<br />
+【第16回】channelをchannelで送る ……データの流れの動的な制御<span class="author">&hellip;&hellip;牧 大輔</span></li>
+<li>Dive to Java ── OpenJDK開発者が明かす，最新開発／運用テクニック<br />
+【第10回】アプリケーション開発でのコンテナ活用 ……コンパクトな実行バイナリ作成，ベースイメージの特徴と選び方<span class="author">&hellip;&hellip;末永 恭正，久保田 祐史</span></li>
+<li>Perl Hackers Hub<br />
+【第59回】Fediverse入門 ……非中央集権型SNSサーバを作ろう！<span class="author">&hellip;&hellip;白方 健太郎　監修：牧 大輔，福本 貴之，松木 雅幸，大沢 和宏</span></li>
+<li>インフラ運用のアイデア＆テクニック ── 小さなチームでマネージドサービスを活用<br />
+【第4回】マネージドサービスによる既存サーバの再構築 ……1台のEC2サーバから，コンテナ化とストレージ移行で高可用構成へ<span class="author">&hellip;&hellip;藤原 俊一郎</span></li>
+<li>知りたい！ フロントエンドトレンド<br />
+【最終回】WebSocket再入門 ……React＋Node.jsによるリアルタイムチャットアプリケーションの作成<span class="author">&hellip;&hellip;大原 壯太</span></li>
+<li>縁の下のUIデザイン ── 少しの工夫で大きな改善！<br />
+【第16回】入力フォームを1画面にする？ 分割する？<span class="author">&hellip;&hellip;池田 拓司</span></li>
+<li>はまちちゃんとわかばちゃんのREADER'S FORUM ── 読者のページ<br />
+【第65回】<span class="author">&hellip;&hellip;はまちや2，竹原</span></li>
+</ul>
+<h3>Special Report</h3>
+<ul class="toc">
+<li>LINE DEVELOPER DAY 2019<span class="author">&hellip;&hellip;櫛井 優介</span></li>
+</ul>
+    </section>
+    <section id="support">
+      <h2>サポート</h2>
+<h3 id="errata">正誤表</h3>
+<p>本書の以下の部分に誤りがありました。ここに訂正するとともに，<wbr/>ご迷惑をおかけしたことを深くお詫び申し上げます。</p>
+<div align="right"><p>（2019年12月19日最終更新）</p></div>
+
+<h4>「News Hot Line」P.7　左上記事URL</h4>
+<table class="errataTable" cellspacing="0">
+<tbody>
+<tr><th>誤</th>
+<td>
+hhttps://www.dmm.com/
+</td></tr>
+<tr><th>正</th>
+<td>
+<strong>https</strong>://www.dmm.com/
+</td></tr>
+</tbody></table>
+
+<div class="partition-block"><p>（以下2019年19月17日更新）</p></div>
+<h4>特集1　AWS/GCPセキュア化計画　P.17 注3</h4>
+<table class="errataTable" cellspacing="0">
+<tbody>
+<tr><th>誤</th>
+<td>
+https://docs.aws.amazon.com/jajp/general/latest/gr/awstasks-that-require-root.html
+</td></tr>
+<tr><th>正</th>
+<td>
+https://docs.aws.amazon.com/ja<strong>_</strong>jp/general/latest/gr/aws<strong>_</strong>tasks-that-require-root.html
+</td></tr>
+</tbody></table>
+
+
+
+
+<h4>連載「知りたい！ フロントエンドトレンド」　P.151 注6</h4>
+<table class="errataTable" cellspacing="0">
+<tbody>
+<tr><th>誤</th>
+<td>
+nohttps://nodemon.io/
+</td></tr>
+<tr><th>正</th>
+<td>
+<strong>https</strong>://nodemon.io/
+</td></tr>
+</tbody></table>
+
+
+
+
+
+<h3 id="download">ダウンロード</h3>
+<!--　サンプルコードのダウンロードはここから-->
+
+<div align="right"><p>（2019年12月19日更新）</p></div>
+<dl class="footNote">
+<dt>■ご注意</dt>
+<dd><ul class="listBlock01">
+<li><strong>※</strong> 本コーナーは，<wbr/>本誌記事参考用資料としてのご提供を目的としております。</li>
+<li><strong>※</strong> 本誌記載の内容およびサポートサイトで公開しているサンプルコードに基づく運用の結果について，<wbr/>記事の筆者，<wbr/>プログラムの作者/提供元，<wbr/>(株)技術評論社は一切の責任を負いかねます。ご自身の責任のもと，<wbr/>ご使用ください。</li>
+<li><strong>※</strong> 各サンプルファイル/ソースコードには，<wbr/>個別に，<wbr/>ライセンスやREADMEファイルなどで注意事項/制限事項が添付されている場合がございます。その場合，<wbr/>該当のライセンス，<wbr/>注意事項/制限事項を優先して適用とさせていただきますので，<wbr/>ダウンロード後，<wbr/>内容をご確認ください。</li></ul></dd>
+</dl>
+
+<h4>特集2「作って学ぶWebAuthn」</h4>
+<ul>
+<li>本特集で使用された<a href="http://image.gihyo.co.jp/assets/files/magazine/wdpress/2020/114/WDB114-Toku2-WebAuthn.zip">ソースコード</a></li>
+</ul>
+
+
+<h4>連載</h4>
+
+<ul>
+<li>「Goに入りては…… ── When In Go...」で使用された<a href="http://image.gihyo.co.jp/assets/files/magazine/wdpress/2020/114/WDB114-WhenInGo-16.zip">ソースコード</a></li>
+<li>「Dive to Java ── OpenJDK開発者が明かす、最新開発／<wbr/>運用テクニック」で使用された<a href="http://image.gihyo.co.jp/assets/files/magazine/wdpress/2020/114/WDB114-Java-10.zip">ソースコード</a></li>
+<li>「Perl Hackers Hub」で使用された<a href="http://image.gihyo.co.jp/assets/files/magazine/wdpress/2020/114/WDB114-Perl-59.zip">ソースコード</a></li>
+<li>「知りたい！ フロントエンドトレンド」で使用された<a href="https://github.com/sottar/webdb114">ソースコード</a>（執筆者GitHubリポジトリ）</li>
+</ul>
+
+<!--　サンプルコードここまで-->
+
+
+    </section>
+  </div>
+  </div>
+<script defer="defer">try{twttr.widgets.load();FB.XFBML.parse();Hatena.Bookmark.BookmarkButton.setup();}catch(e){}</script>
+</div>    <div id="bookList">
+      <h2>商品一覧</h2>
+      <div id="topNavigation">
+        <div id="filter">
+          <form id="search" action="/dp" method="get">
+            <input type="search" name="query" id="searchText" title="検索する商品のキーワードを入力" placeholder="商品のキーワード" required="required" value=""/>
+            <input type="submit" id="searchSubmit" value="検索" title="検索する"/>
+          </form>
+          <div id="select">
+            <a href="" id="selectLabel" title="商品ジャンルを選択する"></a>
+            <div id="selectMenu">
+              <ul id="selectMenuBody"></ul>
+            </div>
+          </div>
+        </div>
+        <nav id="pagingTop">
+        </nav>
+      </div>
+      <ul itemprop="isPartOf" itemscope="itemscope" itemtype="http://www.schema.org/CollectionPage" id="listBook" class="list-book">
+      </ul>
+      <nav id="pagingBottom">
+      </nav>
+    </div>
+  </div>
+  <footer id="footer" itemscope="itemscope" itemtype="http://www.schema.org/WPFooter">
+    <div id="wait" class="hidden"></div>
+    <nav id="navigation" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
+      <ul id="navigationLink">
+        <li id="navLinkHome" class="current"><a itemprop="url" href="/dp" title="ストア" class="home">ストア</a></li>
+        <li id="navLinkMyPage"><a itemprop="url" href="/dp/my-page" title="マイページ" class="mypage">マイページ</a></li>
+        <li id="navLinkInfor"><a itemprop="url" href="/dp/information" title="お知らせ" class="information">お知らせ</a></li>
+        <li id="navLinkHelp"><a itemprop="url" href="/dp/help" title="ヘルプ" class="help">ヘルプ</a></li>
+      </ul>
+    </nav>
+    <nav id="function" itemscope="itemscope" itemtype="http://www.schema.org/WPSideBar">
+      <div id="backgroundWrapper" style="display:block;opacity:0.4"></div>
+      <div id="navInfor"></div>
+    </nav>
+    <div id="storeInformation">
+      <ul id="footerLink">
+        <li>Twitter: <a href="https://twitter.com/gihyoDP">@gihyoDP</a></li>
+        <li><a href="/dp/help/about/site">このサイトについて</a></li>
+        <li><a href="/dp/help/about/terms">利用規約</a></li>
+        <li><a href="/dp/help/about/privacy">プライバシーポリシー</a></li>
+        <li><a href="/dp/help/about/law">特定商取引法に基づく表示</a></li>
+      </ul>
+      <p id="storeCopyright"><small>Copyright © 2020 <span class="reserved">All Rights Reserved by</span> <a href="/book">Gijutsu-Hyohron Co., Ltd.</a></small></p>
+    </div>
+  </footer>
+<script>var params={"url":"https:\/\/gihyo.jp\/dp\/ebook\/2019\/978-4-297-11110-6","path":"\/dp\/ebook\/2019\/978-4-297-11110-6","targetId":"978-4-297-11110-6","parent":"\/dp","overlay":true,"body":"    <div id=\"bookList\">\n      <h2>\u5546\u54c1\u4e00\u89a7<\/h2>\n      <div id=\"topNavigation\">\n        <div id=\"filter\">\n          <form id=\"search\" action=\"\/dp\" method=\"get\">\n            <input type=\"search\" name=\"query\" id=\"searchText\" title=\"\u691c\u7d22\u3059\u308b\u5546\u54c1\u306e\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\" placeholder=\"\u5546\u54c1\u306e\u30ad\u30fc\u30ef\u30fc\u30c9\" required=\"required\" value=\"\"\/>\n            <input type=\"submit\" id=\"searchSubmit\" value=\"\u691c\u7d22\" title=\"\u691c\u7d22\u3059\u308b\"\/>\n          <\/form>\n          <div id=\"select\">\n            <a href=\"\" id=\"selectLabel\" title=\"\u5546\u54c1\u30b8\u30e3\u30f3\u30eb\u3092\u9078\u629e\u3059\u308b\"><\/a>\n            <div id=\"selectMenu\">\n              <ul id=\"selectMenuBody\"><\/ul>\n            <\/div>\n          <\/div>\n        <\/div>\n        <nav id=\"pagingTop\">\n        <\/nav>\n      <\/div>\n      <ul itemprop=\"isPartOf\" itemscope=\"itemscope\" itemtype=\"http:\/\/www.schema.org\/CollectionPage\" id=\"listBook\" class=\"list-book\">\n      <\/ul>\n      <nav id=\"pagingBottom\">\n      <\/nav>\n    <\/div>","isLogin":false,"dialog":"<aside id=\"dialog\" class=\"dialog-login\" style=\"opacity:0\">\n  <div id=\"dialogBody\">\n    <div id=\"gihyoAccount\">\n      <h2>\u30e1\u30fc\u30eb\u30a2\u30c9\u30ec\u30b9\u3067\u30ed\u30b0\u30a4\u30f3<\/h2>\n      <form action=\"?login\" method=\"post\">\n        <input type=\"hidden\" name=\"fid\" value=\"\"\/>\n        <dl>\n          <dt>\u30a2\u30ab\u30a6\u30f3\u30c8<\/dt>\n          <dd><input type=\"email\" name=\"account\" placeholder=\"\u30e1\u30fc\u30eb\u30a2\u30c9\u30ec\u30b9\" required=\"required\" title=\"\u30a2\u30ab\u30a6\u30f3\u30c8\u306e\u30e1\u30fc\u30eb\u30a2\u30c9\u30ec\u30b9\u3092\u5165\u529b\"\/><\/dd>\n          <dt>\u30d1\u30b9\u30ef\u30fc\u30c9<\/dt>\n          <dd><input type=\"password\" name=\"password\" placeholder=\"\u30d1\u30b9\u30ef\u30fc\u30c9\" required=\"required\" title=\"\u30a2\u30ab\u30a6\u30f3\u30c8\u306e\u30d1\u30b9\u30ef\u30fc\u30c9\u3092\u5165\u529b\"\/><\/dd>\n        <\/dl>\n        <p id=\"loginButton\"><input type=\"submit\" value=\"\u30ed\u30b0\u30a4\u30f3\" title=\"\u30ed\u30b0\u30a4\u30f3\u3059\u308b\"\/><\/p>\n        <ul id=\"loginFunction\">\n          <li><a href=\"\/dp\/help\/buy\/forgot\">\u30d1\u30b9\u30ef\u30fc\u30c9\u3092\u304a\u5fd8\u308c\u306e\u65b9<\/a><\/li>\n          <li><a href=\"\/dp\/help\/buy\/account\">\u65b0\u898f\u767b\u9332\u3092\u3054\u5e0c\u671b\u306e\u65b9<\/a><\/li>\n        <\/ul>\n      <\/form>\n    <\/div>\n    <div id=\"externalSite\">\n      <h2>\u5916\u90e8\u30b5\u30fc\u30d3\u30b9\u3067\u30ed\u30b0\u30a4\u30f3<\/h2>\n      <ul>\n      <li class=\"google\"><a href=\"https:\/\/gihyo.jp\/auth\/google\">Google<\/a><\/li>\n      <li class=\"facebook\"><a href=\"https:\/\/gihyo.jp\/auth\/facebook\">Facebook<\/a><\/li>\n      <li class=\"yahoo\"><a href=\"https:\/\/gihyo.jp\/auth\/yahoojp\">Yahoo! JAPAN<\/a><\/li>\n      <\/ul>\n      <p><a href=\"\/dp\/help\/buy\/external\">\u5916\u90e8\u30b5\u30fc\u30d3\u30b9\u3067\u306e\u30ed\u30b0\u30a4\u30f3\u306b\u3064\u3044\u3066<\/a><\/p>\n    <\/div>\n    <p id=\"close\"><a href=\"#close\" title=\"\u9589\u3058\u308b\">\u9589\u3058\u308b<\/a><\/p>\n  <\/div>\n<\/aside>"}</script>
+  <script>var asyncCall=function(){var e=Array.prototype.slice,a=Function.prototype.bind||function(j){var a=this,b=e.call(arguments,1);return function(){var c=e.call(arguments);return a.apply(j,b.concat(c))}},f=a.call(a,Function.prototype.call),b=f(e),c=f(a),d=f(Function.prototype.apply);if("undefined"!==typeof process)a=function(){var a=b(arguments);process.nextTick(d(c,null,a))};else if("function"===typeof setImmediate)a=function(){var a=b(arguments);setImmediate(d(c,null,a))};else if("function"===typeof MessageChannel){var g=new MessageChannel,h=[];g.port1.onmessage=function(){h.shift()()};a=function(){var a=b(arguments);h.push(d(c,null,a));g.port2.postMessage(0)}}else a=function(){var a=b(arguments);setTimeout(d(c,null,a),0)};return a}();window.onerror=function(mes,fname,lnum){var erIgnore=['top.GLOBALS','originalCreateNotification','canvas.contentDocument','fb_xd_fragment','Script error.'];for(i=0;i<erIgnore.length;i++){if(mes.indexOf(erIgnore[i])>-1){return false;}};var mes='message:'+mes+', file:'+fname+', line:'+lnum+', href:'+location.href+', UA:'+window.navigator.userAgent;ga('send','event','Error','JSError',mes);};</script>
+  <script src="//platform.twitter.com/widgets.js" id="twitter-wjs" async defer></script>
+  <script src="//connect.facebook.net/ja_JP/sdk.js#xfbml=1&appId=185201618169441&version=v2.8" id="facebook-jssdk" async defer></script>
+  <script src="//apis.google.com/js/platform.js" async defer></script>
+  <script src="//b.hatena.ne.jp/js/bookmark_button.js" charset="utf-8" async defer></script>
+</body>
+</html>

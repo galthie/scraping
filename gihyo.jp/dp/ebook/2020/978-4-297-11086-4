@@ -1,0 +1,607 @@
+<!DOCTYPE HTML>
+<html lang="ja" class="pc">
+<head>
+  <meta charset="UTF-8">
+  <title>［ゲーム＆モダン JavaScript文法で2倍楽しい］グラフィックスプログラミング入門 ——リアルタイムに動く画面を描く。プログラマー直伝の基本 | Gihyo Digital Publishing … 技術評論社の電子書籍</title>
+  <meta http-equiv="Content-Style-Type" content="text/css"/>
+  <meta http-equiv="Content-Script-Type" content="application/javascript"/>
+  <meta name="description" content="楽しく遊べる2Dゲームの開発を進めながら，グラフィックスプログラミングの基本が学べる入門書。一度習得すると，ゲームや映像生成，動的可視化をはじめ，幅広い分野で長く役立つグラフィックスプログラミングの基礎。本書では，リアルタイムに動く画像を描くために求められる技術や考え方を平易に解説します。開発言語として，エディタとブラウザがあれば開発ができるJavaScriptを採用し，すぐにスタートできる構成が特徴です。豊富な図解に加え，いまどきのJavaScript（ES2015準拠）の基本文法，これだけは知っておきたい数学知識も厳選収録。一線の開発者による，現場で活かせるやさしい実践解説です。"/>
+  <meta name="keywords" content="杉本雅広電子書籍,電子出版,EPUB,PDF,技術評論社"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="format-detection" content="telephone=no"/>
+  <link rel="related" href="http://gihyo.jp/dp/catalogs.opds" type="application/atom+xml;profile=opds-catalog" title="Gihyo Digital Publishing OPDS Catalog"/>
+  <link rel="shortcut icon" href="/assets/templates/gdp/favicon.ico" type="image/vnd.microsoft.icon"/>
+  <link rel="apple-touch-icon-precomposed" href="/dp/assets/gdp-icon.png"/>
+  <!--[if lt IE 9]>
+    <script>var msie=8;</script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="/dp/assets/js/html5shiv.min.js"></script>
+    <script src="//css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <script src="/dp/assets/js/selectivizr-min.js"></script>
+    <script src="/dp/assets/js/addEventListener.min.js"></script>
+    <script src="/dp/assets/js/textContent.min.js"></script>
+  <![endif]-->
+  <!--[if lte IE 9]>
+    <script src="/dp/assets/js/classList.min.js" defer></script>
+  <![endif]-->
+  <link rel="stylesheet" href="/dp/assets/style/store1217.css" type="text/css" media="all"/>
+  <script src="/dp/assets/js/gdpFunction0411.min.js" defer></script>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:site" content="@gihyoDP"/>
+  <meta property="og:title" content="［ゲーム＆モダン JavaScript文法で2倍楽しい］グラフィックスプログラミング入門 ——リアルタイムに動く画面を描く。プログラマー直伝の基本 | Gihyo Digital Publishing … 技術評論社の電子書籍"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:description" content="楽しく遊べる2Dゲームの開発を進めながら，グラフィックスプログラミングの基本が学べる入門書。一度習得すると，ゲームや映像生成，動的可視化をはじめ，幅広い分野で長く役立つグラフィックスプログラミングの基礎。本書では，リアルタイムに動く画像を描くために求められる技術や考え方を平易に解説します。開発言語として，エディタとブラウザがあれば開発ができるJavaScriptを採用し，すぐにスタートできる構成が特徴です。豊富な図解に加え，いまどきのJavaScript（ES2015準拠）の基本文法，これだけは知っておきたい数学知識も厳選収録。一線の開発者による，現場で活かせるやさしい実践解説です。"/>
+  <meta property="og:url" content="https://gihyo.jp/dp/ebook/2020/978-4-297-11086-4"/>
+  <meta property="og:image" content="https://image.gihyo.co.jp/assets/images/gdp/2020/978-4-297-11086-4.jpg"/>
+  <meta property="og:site_name" content="Gihyo Digital Publishing"/>
+  <meta property="fb:app_id" content="185201618169441"/>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-4149703-1', 'auto');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+  </script>
+</head>
+<body itemscope="itemscope" itemtype="http://schema.org/WebPage" class="page-home">
+  <header id="header" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
+    <h1 class="home-title">Gihyo Digital Publishing</h1>
+    <h2 class="home-subtitle">技術評論社の電子書籍サイト</h2>
+    <nav id="headerFunction">
+      <div id="login">
+        <a href="#login" title="ログイン・会員登録">ログイン</a>
+      </div>
+      <div id="cart">
+        <a href="/dp/cart" title="カートは空です">カート</a>
+      </div>
+    </nav>
+  </header>
+  <div id="main">
+    <noscript><div id="noscript">
+      <p>本サイトではJavaScriptを使用しております。JavaScriptが無効な状態ではご利用いただけません。</p>
+    </div></noscript>
+
+<div id="overlayWindow" class="book-infor" itemscope itemtype="http://schema.org/Book" typeof="product:Product" xmlns:product="http://search.yahoo.com/searchmonkey/product/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:media="http://search.yahoo.com/searchmonkey/media/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:currency="http://search.yahoo.com/searchmonkey-datatype/currency/" style="display:block;opacity:1">
+  <header id="overlayHeader">
+    <h1>書籍概要</h1>
+    <nav id="overlayFunction">
+      <p id="close"><a href="/dp/genre/%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3%E3%83%BB%E7%B4%A0%E6%9D%90%E9%9B%86" title="閉じる">閉じる</a></p>
+      <ul id="jump">
+        <li id="detailRef"><a href="#title" title="概要を見る">概要</a></li>
+        <li id="contentRef"><a href="#content" title="目次を見る">目次</a></li>
+        <li id="supportRef"><a href="#support" title="サポート情報を見る">サポート</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div id="bookInforMain">
+  <hgroup id="title">
+<h2 id="bookSeries"><a href="/dp/series/WEB%2BDB%20PRESS%20plus">WEB+DB PRESS plus</a></h2>
+    <h1 id="bookTitle" property="rdfs:label" itemprop="name">［ゲーム＆<wbr/>モダン JavaScript<wbr/>文法で<wbr/>2<wbr/>倍楽しい］<wbr/>グラフィックスプログラミング入門<br/><span class="sub">——リアルタイムに動く画面を描く。プログラマー直伝の基本</span></h1>
+  </hgroup>
+  <aside id="bookCover" rel="rdfs:seeAlso media:image"><img src="https://image.gihyo.co.jp/assets/images/gdp/2020/978-4-297-11086-4.jpg" alt="［ゲーム＆モダン JavaScript文法で2倍楽しい］グラフィックスプログラミング入門 ——リアルタイムに動く画面を描く。プログラマー直伝の基本"/></aside>
+  <dl id="publicationData" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+    <dt>著者</dt>
+    <dd itemprop="author">杉本雅広　著</dd>
+    <dt>発売日</dt>
+    <dd><time datetime="2020-01-11">2020年1月11日</time></dd>
+    <dt>更新日</dt>
+    <dd><time datetime="2020-01-11">2020年1月11日</time></dd>
+  </dl>
+  <aside>
+    <ul class="information">
+      <li>本書は，<a href="https://gihyo.jp/book/2020/978-4-297-11085-7" target="_blank">2020年1月18日に発売される書籍</a>の電子版です。</li>
+      <li class="need-login">ご購入には会員登録・ログインが必要です</li>
+      <li class="corporate"><a href="/dp/help/buy/bulkpurchase">学校・法人等団体でのご利用について</a></li>
+    </ul>
+    <dl id="productPrice">
+<dt><span class="name">EPUB/PDFセット</span><span class="buy">2,780円 <a id="pid402743" href="#cartAdd" title="カートに入れる">カートに入れる<div class="option" title="購入オプション">▼<ul><li title="通常購入">自分用に購入する</li><li class="gift" title="ギフトコードを購入">ギフトとして購入する</li></ul></div></a></span></dt><dd><span class="page"><span itemprop="numberOfPages">368</span>ページ相当</span><span class="pdf">PDF</span> <span class="epub">EPUB：リフロー</span> </dd>
+
+    </dl>
+  </aside>
+  <aside id="social">
+    <ul>
+      <li class="twitter"><a href="https://twitter.com/search?q=https://gihyo.jp/dp/ebook/2020/978-4-297-11086-4" class="twitter--list">リスト</a><a href="http://twitter.com/share" class="twitter-share-button" data-url="https://gihyo.jp/dp/ebook/2020/978-4-297-11086-4" data-text="［ゲーム＆モダン JavaScript文法で2倍楽しい］グラフィックスプログラミング入門 ——リアルタイムに動く画面を描く。プログラマー直伝の基本 #gihyoDP" data-count="none" data-lang="ja">ツイート</a></li>
+      <li class="facebook"><div class="fb-like" data-href="https://gihyo.jp/dp/ebook/2020/978-4-297-11086-4" data-send="false" data-layout="box_count" data-width="450" data-show-faces="false" data-share="true"></div></li>
+      <li class="hatena"><a href="http://b.hatena.ne.jp/entry/https://gihyo.jp/dp/ebook/2020/978-4-297-11086-4" class="hatena-bookmark-button" data-hatena-bookmark-layout="vertical-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="//b.hatena.ne.jp/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a></li>
+    </ul>
+  </aside>
+  <div id="productDetail">
+    <section id="detail">
+      <h2>概要</h2>
+<p>楽しく遊べる2Dゲームの開発を進めながら，<wbr/>グラフィックスプログラミングの基本が学べる入門書。</p>
+
+<p>一度習得すると，<wbr/>ゲームや映像生成，<wbr/>動的可視化をはじめ，<wbr/>幅広い分野で長く役立つグラフィックスプログラミングの基礎。</p>
+
+<p>本書では，<wbr/>リアルタイムに動く画像を描くために求められる技術や考え方を平易に解説します。<br />
+開発言語として，<wbr/>エディタとブラウザがあれば開発ができるJavaScriptを採用し，<wbr/>すぐにスタートできる構成が特徴です。<br />
+豊富な図解に加え，<wbr/>いまどきのJavaScript（ES2015準拠）の基本文法，<wbr/>これだけは知っておきたい数学知識も厳選収録。</p>
+
+<p>一線の開発者による，<wbr/>現場で活かせるやさしい実践解説です。</p><h3>こんな方におすすめ</h3>
+<ul><li>コンピューターグラフィックスとそのプログラミングに興味をお持ちの方々</li><li>広くグラフィックスというテーマに取り組んでいる学生の方々</li><li>ゲーム開発やWeb開発にまつわる知識を，<wbr/>土台から強化していきたい方々</li></ul>
+<h3>本書の構成</h3>
+<p>本書の章構成ならびに各章の概要は以下のとおりです。</p>
+
+<div class="illust">
+<table>
+<tr><th width="12%"><strong>第1章</strong></th><td><strong>［入門］グラフィックスプログラミング　……長く役立つ基礎の基礎</strong><br />
+グラフィックスとは何か。そして，<wbr/>グラフィックスをプログラミングするということはどのようなことなのか。さまざまな事例を引用しながら，<wbr/>グラフィックスプログラミングそのものについて，<wbr/>まずはその概要を把握していきます。
+</td></tr>
+<tr><th><strong>第2章</strong></th><td><strong>［グラフィックスプログラミングで役立つ］JavaScript/ES2015入門　……開発環境から文法基礎まで</strong><br />
+本書で利用するプログラミング言語であるJavaScriptの基本や，<wbr/>実際に開発を行う上で必要となる開発環境の準備などについて説明します。
+</td></tr>
+<tr><th><strong>第3章</strong></th><td><strong>［基礎］グラフィックスプログラミングと数学　……三角関数，<wbr/>線型代数，<wbr/>乱数＆補間</strong><br />
+グラフィックスプログラミングに欠かすことのできない，<wbr/>数学の概念について基本中の基本から丁寧におさらいします。数学に不安のある場合でも，<wbr/>まず本章で予習を行うことで以降の章の内容をスムーズに把握できるようになるでしょう。
+</td></tr>
+<tr><th><strong>第4章</strong></th><td><strong>Canvas2Dから学べる基本　……Canvas2Dコンテキストと描画命令</strong><br />
+JavaScriptを利用してグラフィックスを描画することができるCanvas APIの基本的な使い方について説明します。</td></tr>
+<tr><th><strong>第5章</strong></th><td><strong>ユーザーインタラクションのプログラミング　……ゼロから作るシューティングゲーム❶</strong><br />
+</td></tr>
+<tr><th><strong>第6章</strong></th><td><strong>キャラクターと動きのプログラミング　……ゼロから作るシューティングゲーム❷</strong><br />
+</td></tr>
+<tr><th><strong>第7章</strong></th><td><strong>状態に応じた判定や演出のプログラミング　……ゼロから作るシューティングゲーム❸</strong><br />
+第5章〜第7章の各章では，<wbr/>第4章で扱ったCanvas APIを利用して，<wbr/>シューティングゲームの実装を行います。グラフィックスプログラミングにはさまざまなテクニックが必要になりますが，<wbr/>「小さく実現しやすい目標設定」ができるゲーム作成というテーマを通じて，<wbr/>一つ一つ丁寧にロジックやアルゴリズムを紐解いていきます。
+</td></tr>
+
+<tr><th><strong>第8章</strong></th><td><strong>ピクセルと色のプログラミング　……ピクセルを塗る操作と感覚</strong><br />
+グラフィックスプログラミングの本質であるピクセルレベルでのグラフィックスの制御や，<wbr/>画像処理のテクニックについて説明します。
+</td></tr>
+</table>
+</div><aside class="author"><h3>杉本雅広（すぎもとまさひろ）</h3><p>元々は趣味で開発を行うサンデープログラマーだったが，<wbr/>JavaScriptのAPIの1つであるWebGLに出会い，<wbr/>日本語でのWebGL解説サイトの運営や勉強会の主催をスタート。現在ではWebGL実装を専門に扱う開発者として独立し，<wbr/>㈱はじっこを設立。WebGLやWebGLで利用するGLSL（OpenGL Shading Language）と呼ばれるシェーダ言語を扱うスクール（本書執筆時点で国内唯一）を運営するかたわら，<wbr/>WebGLの普及活動を行っている。</p>
+<p>
+ホームページ：<a href="https://wgld.org">WebGL開発支援サイト</a><br />
+ブログ：<a href="https://webgl.souhonzan.org">WebGL総本山</a>
+</p></aside><section id="sample"><h2>サンプル</h2><a href="https://image.gihyo.co.jp/assets/files/book/2020/978-4-297-11085-7/9784297110857-01.png"><img src="https://image.gihyo.co.jp/assets/images/reading.gif" data-image="https://image.gihyo.co.jp/assets/files/book/2020/978-4-297-11085-7/thumb/TH400_9784297110857-01.png,https://image.gihyo.co.jp/assets/files/book/2020/978-4-297-11085-7/9784297110857-01.png" width="400" height="533" alt="sample"/></a><a href="https://image.gihyo.co.jp/assets/files/book/2020/978-4-297-11085-7/9784297110857-02.png"><img src="https://image.gihyo.co.jp/assets/images/reading.gif" data-image="https://image.gihyo.co.jp/assets/files/book/2020/978-4-297-11085-7/thumb/TH400_9784297110857-02.png,https://image.gihyo.co.jp/assets/files/book/2020/978-4-297-11085-7/9784297110857-02.png" width="400" height="533" alt="sample"/></a><a href="https://image.gihyo.co.jp/assets/files/book/2020/978-4-297-11085-7/9784297110857-03.png"><img src="https://image.gihyo.co.jp/assets/images/reading.gif" data-image="https://image.gihyo.co.jp/assets/files/book/2020/978-4-297-11085-7/thumb/TH400_9784297110857-03.png,https://image.gihyo.co.jp/assets/files/book/2020/978-4-297-11085-7/9784297110857-03.png" width="400" height="533" alt="sample"/></a><a href="https://image.gihyo.co.jp/assets/files/book/2020/978-4-297-11085-7/9784297110857-04.png"><img src="https://image.gihyo.co.jp/assets/images/reading.gif" data-image="https://image.gihyo.co.jp/assets/files/book/2020/978-4-297-11085-7/thumb/TH400_9784297110857-04.png,https://image.gihyo.co.jp/assets/files/book/2020/978-4-297-11085-7/9784297110857-04.png" width="400" height="533" alt="sample"/></a><a href="https://image.gihyo.co.jp/assets/files/book/2020/978-4-297-11085-7/9784297110857-05.png"><img src="https://image.gihyo.co.jp/assets/images/reading.gif" data-image="https://image.gihyo.co.jp/assets/files/book/2020/978-4-297-11085-7/thumb/TH400_9784297110857-05.png,https://image.gihyo.co.jp/assets/files/book/2020/978-4-297-11085-7/9784297110857-05.png" width="400" height="533" alt="sample"/></a></section>
+    </section>
+    <section id="content">
+      <h2>目次</h2>
+<div id="bookSearch">
+<form id="bookSearchForm" action="search" method="post">
+  <input type="search" name="query" id="bookSearchText" title="本書内を検索するキーワードを入力" placeholder="本書内のキーワード" required="required" value="">
+  <input type="hidden" name="code" value="40439">
+  <input type="submit" id="bookSearchSubmit" value="検索" title="検索する">
+</form>
+</div><h3>第1章　［入門］グラフィックスプログラミング　……長く役立つ基礎の基礎</h3>
+
+<h4>1.1　グラフィックスとグラフィックスプログラミングの基本　……CG，2D，3D，画素</h4>
+<ul class="toc">
+<li>コンピューターグラフィックス　……コンピューターによって描き出されたグラフィックス</li>
+<li>2Dと3D　……グラフィックスの生成手順やデータ管理方法が違うだけ</li>
+<li>グラフィックスを構成するもの　……出力先は「画素」の集まり</li>
+<li>グラフィックスプログラミングの課題や目的　……画素をどう塗りつぶすか</li>
+</ul>
+<h4>1.2　グラフィックスプログラミングの分類　……活躍の舞台は広い</h4>
+<ul class="toc">
+<li>情報を伝えるためのグラフィックス</li>
+<li>情報を正しく理解するためのグラフィックス</li>
+<li>エンターテイメントとしてのグラフィックス</li>
+<li>アートとしてのグラフィックス</li>
+</ul>
+<h4>1.3　グラフィックスプログラミングと技術　……原則，プログラミング言語，API</h4>
+<ul class="toc">
+<li>グラフィックスプログラミングの原則</li>
+<li>グラフィックスプログラミングと，プログラミング言語＆ツール　……手軽にグラフィックスを生成する選択肢<ul class="toc">
+	<li>Processingでできること</li>
+	<li>ゲームエンジンから学び始める</li>
+	<li>ツールと基礎/原理の学習</li></ul></li>
+<li>グラフィックスAPI　……DirectX，OpenGL，OpenGL ES<ul class="toc">
+	<li>［まとめ］DirectXとOpenGLの特徴</li></ul></li>
+<li>グラフィックスAPIを利用するアプリケーション</li>
+<li>Column　Metal，Vulkan　……AppleとKhronos Groupのその他のグラフィックスAPI</li>
+<li>Webとグラフィックス　……JavaScriptと動的なグラフィックス生成機能</li>
+<li>JavaScriptとWebブラウザによる効率的な学習の実現</li>
+<li>JavaScriptのメリットを活かす　……本書の構成と解説の流れ</li>
+</ul>
+<h4>1.4　本章のまとめ</h4>
+
+
+
+<h3>第2章　［グラフィックスプログラミングで役立つ］JavaScript/ES2015入門　……開発環境から文法基礎まで</h3>
+
+<h4>2.1　本書における開発言語と開発環境　……JavaScript，Chrome，Windows＆macOS</h4>
+<ul class="toc">
+<li>サンプルの実行環境　……Google Chrome</li>
+<li>開発環境とテキストエディタ</li>
+<li>Webとアプリケーション<ul class="toc">
+	<li>クライアントサイドとサーバーサイド</li></ul></li>
+<li>JavaScriptとECMAScript</li>
+<li>Column　ECMAScript規格とWebブラウザの実装の関係</li>
+<li>JavaScriptの進化と，グラフィックスプログラミング</li>
+</ul>
+<h4>2.2　サンプルと実行環境について　……ファイル構成，ブラウザ＆開発ツール</h4>
+<ul class="toc">
+<li>サンプルの構成と実行方法</li>
+<li>Chromeの開発者ツールの基本　……JavaScriptのデバッグ準備</li>
+<li>開発者ツールのパネル＆JavaScriptのデバッグ<ul class="toc">
+	<li>Elementパネル　……HTMLドキュメントの構造を確認</li>
+	<li>Sourcesパネル　……JavaScriptプログラムの実行制御をデバッグに活用</li>
+	<li>Consoleパネル　……JavaScriptのインラインコードの実行結果を確認できる</li></ul></li>
+<li>コメントとJSDoc　……サンプルに含まれるコメントの読み方</li>
+</ul>
+<h4>2.3　［グラフィックスプログラミングのための］JavaScript/ES2015の基本　……基本操作，変数，関数，オブジェクト，演算子</h4>
+<ul class="toc">
+<li>アラートやコンソールの活用</li>
+<li>変数　……変数名，キーワード，基本的な規約</li>
+<li>変数宣言キーワードとスコープ<ul class="toc">
+	<li>ローカルスコープ，グローバルスコープ</li>
+	<li>var　……スコープは関数内部限定</li>
+	<li>let　……スコープは関数内部とブロック内部</li>
+	<li>const　……スコープは関数内部とブロック内部。再代入が行えない</li></ul></li>
+<li>JavaScriptのデータ型</li>
+<li>変数の動的型付け　……JavaScriptでは変数自身は型を持たない</li>
+<li>Column　変数宣言キーワードの取捨選択<ul class="toc">
+	<li>動的型付けの言語で気をつけたいこと</li></ul></li>
+<li>Column　null，undefined，Symbol</li>
+<li>関数　……名前付きの関数の定義と呼び出し，関数の戻り値</li>
+<li>関数式　……文と式<ul class="toc">
+	<li>関数式による関数の定義と呼び出し</li>
+	<li>無名関数</li>
+	<li>アロー関数</li></ul></li>
+<li>Column　関数の引数と既定値<ul class="toc">
+	<li>関数式と関数の引数</li></ul></li>
+<li>Column　非同期処理とコールバック関数</li>
+<li>Column　JavaScriptと「自動セミコロン挿入」機能</li>
+<li>オブジェクト型　……JavaScriptではプリミティブなデータ以外，すべてがオブジェクト型</li>
+<li>配列　……データをまとめて格納できる。（グラフィックス）プログラミングで頻出のオブジェクト<ul class="toc">
+	<li>配列の要素へのアクセス　……インデックスを指定</li></ul></li>
+<li>オブジェクト　……多種多様なオブジェクトで成り立つJavaScript<ul class="toc">
+	<li>オブジェクトの構造</li>
+	<li>オブジェクトの要素へのアクセス</li></ul></li>
+<li>Column　プロパティとメソッド</li>
+<li>Column　ビルトインオブジェクトとプロトタイプチェーン</li>
+<li>制御構文　……条件や繰り返し。ロジックを記述する<ul class="toc">
+	<li>if文　……ある条件に一致した場合＆しなかった場合，処理へ進む</li>
+	<li>for文　……カウンター変数を用いて繰り返し処理を行う</li></ul></li>
+<li>Column　JavaScriptの真偽値判定<ul class="toc">
+	<li>while文　……柔軟な継続条件で繰り返し処理を行う</li></ul></li>
+<li>Column　無限ループ<ul class="toc">
+	<li>switch文　……特定の条件に応じた分岐処理</li></ul></li>
+<li>演算子　……算術，代入，比較，論理，条件<ul class="toc">
+	<li>算術演算子　……四則演算，剰余</li>
+	<li>インクリメント演算子，デクリメント演算子　……接頭辞と接尾辞に注意</li>
+	<li>代入演算子　……変数に値を代入</li>
+	<li>比較演算子　……原則として厳密比較を使用</li>
+	<li>論理演算子　……&&（AND），||（OR）</li>
+	<li>条件演算子　……条件に合わせて異なる値を用いたい場合</li></ul></li>
+</ul>
+<h4>2.4　本章のまとめ</h4>
+<ul class="toc">
+<li>Column　条件演算子とif文</li>
+</ul>
+
+
+<h3>第3章　［基礎］グラフィックスプログラミングと数学　……三角関数，線型代数，乱数＆補間</h3>
+
+<h4>3.1　角度と三角関数　……ラジアン，sin（サイン），cos（コサイン）</h4>
+<ul class="toc">
+<li>ラジアン　……弧度<ul class="toc">
+	<li>角度の表現　……度数法と弧度法</li>
+	<li>プログラミングと角度　……ラジアンで考える</li></ul></li>
+<li>Column　ラジアンの捉え方</li>
+<li>グラフィックスプログラミングのためのsin，cos　……ラジアン，半径1の円とともに</li>
+<li>Column　グラフィックスプログラミングで大活躍（!?）の三角関数</li>
+</ul>
+<h4>3.2　ベクトルと行列　……点から始める線型代数</h4>
+<ul class="toc">
+<li>ベクトルとスカラー　……量と向き</li>
+<li>原点とベクトルの始点と終点　……点を結ぶ</li>
+<li>ベクトルの向き　……単位化，単位ベクトル，（再び）半径1の円</li>
+<li>Column　座標とベクトル　……配列[x, y]は座標なのか，ベクトルなのか</li>
+<li>ベクトルと演算　……加算，減算</li>
+<li>Column　単位化，正規化，規格化，標準化　……単位化と同様の意味で使われる言葉？</li>
+<li>ベクトルのスカラー倍</li>
+<li>ベクトルの内積，外積<ul class="toc">
+	<li>内積　……内積はベクトルAとベクトルBの成す角θに対するコサイン</li></ul></li>
+<li>Column　ベクトルのスカラー倍で速度が変わる<ul class="toc">
+	<li>外積　……外積はベクトルAとベクトルBの成す角θに対するサイン</li></ul></li>
+<li>Column　ベクトルの内積と外積の使いどころ</li>
+<li>行列　……ベクトルの変形や変換<ul class="toc">
+	<li>回転行列　……ベクトルを回転させる</li></ul></li>
+</ul>
+<h4>3.3　乱数/擬似乱数と補間＆イージング　……グラフィックスプログラミングに役立つ数学関連知識</h4>
+<ul class="toc">
+<li>乱数と擬似乱数　……ランダムな状態と擬似乱数の品質<ul class="toc">
+	<li>JavaScriptと乱数（擬似乱数）　……Chrome/V8のXorshift</li></ul></li>
+<li>補間とイージング　……滑らかさや緩やかさの変化の表現</li>
+</ul>
+<h4>3.4　本章のまとめ</h4>
+<ul class="toc">
+<li>Column　あらゆる場面で活躍する補間関数</li>
+<li>Column　擬似乱数とシード値</li>
+</ul>
+
+
+<h3>第4章　Canvas2Dから学べる基本　……Canvas2Dコンテキストと描画命令</h3>
+
+<h4>4.1　Canvas2Dの基礎知識　……コンテキストオブジェクト，Document Object Model</h4>
+<ul class="toc">
+<li>HTML5とCanvas，Canvas API　……ほとんどのブラウザはCanvasに対応</li>
+<li>コンテキストオブジェクト　……描画処理のための機能と設定を持つオブジェクト</li>
+<li>Canvas2Dコンテキストの取得　……CanvasRenderingContext2D</li>
+<li>HTML要素としてのCanvas　……Canvas要素にはCSSによる余分な装飾は極力行わない</li>
+<li>Column　コンテキストの種類</li>
+<li>Column　RetinaディスプレイとCanvas要素の大きさ　……CSSサイズ，物理サイズ</li>
+<li>Document Object Model　……Canvas要素をはじめ，HTML要素をJavaScriptから参照する</li>
+</ul>
+<h4>4.2　Canvas2Dの基本プリミティブ　……矩形，線，多角形，円，円弧，ベジェ曲線...</h4>
+<ul class="toc">
+<li>矩形の描画　……fillRect</li>
+<li>塗りつぶしと線のスタイル　……fillStyle，strokeStyle</li>
+<li>［予習］Canvas2Dサンプルの構成と動作確認<ul class="toc">
+	<li>サンプルの実行　……HTMLファイルをダブルクリック</li>
+	<li>スクリプトファイルの読み込み　……&lt;script&gt;タグ</li></ul></li>
+<li>Column　CSSのrgb関数とrgba関数<ul class="toc">
+	<li>即時関数を使って全体を囲う</li>
+	<li>読み完了タイミングの検出　……addEventListenerとloadイベント</li>
+	<li>初期化処理　……loadイベント後❶</li>
+	<li>描画処理　……loadイベント後❷</li></ul></li>
+<li>Column　addEventListenerの第3引数の意味</li>
+<li>Column　即時関数と無名関数<ul class="toc">
+	<li>［まとめ］本書サンプルの基本構成のポイント</li></ul></li>
+<li>処理の役割に応じた関数化　……シンプルな役割</li>
+<li>線分（ライン）の描画　……Canvas2Dコンテキストではパスを利用<ul class="toc">
+	<li>サブパス　……パスを区切る仕組み</li>
+	<li>パス＆サブパスを使ったラインの描画</li>
+	<li>［まとめ］Canvas2Dコンテキストでパスを用いた描画の流れ</li></ul></li>
+<li>パスを利用した多角形の描画　……一筆書きで座標を連続でつなぐ</li>
+<li>ランダムに変化する多角形の描画</li>
+<li>円の描画　……円や円弧の描画もパスを利用</li>
+<li>円弧の描画　……乱数によってランダムに変化する円弧の例</li>
+<li>Column　arcメソッドの第6引数</li>
+<li>ベジェ曲線　……2次ベジェ曲線，3次ベジェ曲線，複雑な曲線を描画する</li>
+<li>Column　パスを閉じずに描く　……closePath，stroke</li>
+<li>画像を利用した描画　……読み込みの待機にaddEventListener（再び）</li>
+</ul>
+<h4>4.3　Canvas2Dコンテキストの描画効果＆演出機能　……テキスト，ドロップシャドウ，グラデーション，パターン，アルファブレンディング，コンポジットオペレーション</h4>
+<ul class="toc">
+<li>テキストの描画　……グラフィックスとしてテキストを描く</li>
+<li>ドロップシャドウの描画　……一様に設定内容が反映される点には注意</li>
+<li>Column　文字列のfillとstroke</li>
+<li>グラデーションとパターン　……まずは効果を適用する実体のオブジェクトを生成<ul class="toc">
+	<li>グラデーション　……線形グラデーション，円形グラデーション</li>
+	<li>パターン　……repeat，repeat-x，repeat-y，no-repeat</li></ul></li>
+<li>アルファブレンディング　……アルファ値で，透明や半透明の描画処理</li>
+<li>コンポジットオペレーション　……さまざまな合成の種類<ul class="toc">
+	<li>コンポジットオペエレーションの設定</li></ul></li>
+</ul>
+<h4>4.4　本章のまとめ</h4>
+
+
+
+<h3>第5章　ユーザーインタラクションのプログラミング　……ゼロから作るシューティングゲーム❶</h3>
+
+<h4>5.1　［まずは準備から］シューティングゲームを作る　……ファイル構成とルール</h4>
+<ul class="toc">
+<li>なぜ，ゲーム作り？　……種々の関連技術の集合体で，小さなゴールを設定しやすい</li>
+<li>作成するゲームのファイル構成</li>
+<li>作成するゲームの枠組み　……最低限のルールの定義</li>
+</ul>
+<h4>5.2　ゲームの骨格を作る　……土台となるプログラムの設計</h4>
+<ul class="toc">
+<li>HTMLページとしての構造　……ゲームの舞台となるCanvas要素のための設定</li>
+<li>class構文　……独自の機能や属性を持つクラスを定義できる</li>
+<li>Column　loadイベントとDOMContentLoadedイベント<ul class="toc">
+	<li>クラス再入門　……クラスの概念を持つ言語，持たない言語</li>
+	<li>プロトタイプとクラス　……JavaScriptにクラスは存在しない</li>
+	<li>［まとめ］クラスベースとプロトタイプベース</li>
+	<li>プロトタイプベースの言語の記述と振る舞い　……prototype，new演算子，コンストラクタ関数</li>
+	<li>class構文の使い方　……プロトタイプの記述をわかりやすくする</li></ul></li>
+<li>Column　プロトタイプは拡張できる　……ただし，注意点も</li>
+<li>canvas2d.jsに記述したCanvas2DUtilityオブジェクト　……class構文で定義<ul class="toc">
+	<li>コンストラクタ関数でインスタンスを生成できるオブジェクト　……便宜上の「クラス」</li>
+	<li>constructor（コンストラクタ）</li>
+	<li>property（プロパティ）</li>
+	<li>propertyとgetter（プロパティとゲッター）　……プロパティを取得する際に関数を実行したい</li></ul></li>
+<li>Column　setter（セッター）　……プロパティを設定する際に関数を実行したい<ul class="toc">
+	<li>method（メソッド）　……オブジェクトが持っている関数</li></ul></li>
+<li>Column　プロトタイプを用いるメリット　……プロトタイプチェーン</li>
+<li>script.jsに記述されたメインプログラム　……シューティングゲーム作成のひな形</li>
+<li>メインループ　……アニメーション処理のための基盤を実装<ul class="toc">
+	<li>タイムスタンプの格納と取得</li>
+	<li>描画処理　……塗りつぶし，経過時間の計測，画像の描画，描画処理の再帰呼び出し</li></ul></li>
+<li>ユーザーインタラクション　……ユーザーの入力とaddEventListener</li>
+<li>Column　キー入力系イベントの発生順序とリピート</li>
+<li>シーン構成を整える　……各種シーンの状態管理の基盤</li>
+</ul>
+<h4>5.3　本章のまとめ</h4>
+
+
+
+<h3>第6章　キャラクターと動きのプログラミング　……ゼロから作るシューティングゲーム❷</h3>
+
+<h4>6.1　キャラクターの実装　……キャラクター管理クラス，キーの入力によるインタラクティブな移動</h4>
+<ul class="toc">
+<li>クラスの抽象化　……共通して必要となるパラメーターをまとめて管理<ul class="toc">
+	<li>Positionクラス　……座標を管理するためのクラス</li></ul></li>
+<li>Column　コンストラクタによる値の代入<ul class="toc">
+	<li>Characterクラス　……キャラクターのベースとなる汎用的なクラス</li>
+	<li>クラスの継承と自機キャラクタークラス　……class構文のextendsと，super</li></ul></li>
+<li>自機キャラクタークラスを利用したメインプログラム</li>
+<li>クラスに特有の処理を一元管理する</li>
+<li>キャラクターの幅を考慮した描画</li>
+<li>キャラクターの移動をなめらかに行う<ul class="toc">
+	<li>windowオブジェクトへのプロパティ追加</li></ul></li>
+<li>Column　キャラクターの中心　……3Dでも活かせる座標を意識する感覚<ul class="toc">
+	<li>オブジェクトのプロパティへのアクセス　……ドット記法とブラケット記法</li>
+	<li>テンプレートリテラル</li>
+	<li>ブラケット記法とテンプレートリテラルを組み合わせる</li></ul></li>
+<li>画面の外に出ないように制限する　……画面の端の判定と座標の補正</li>
+<li>Column　速度をspeedというプロパティに置き換えた意味</li>
+</ul>
+<h4>6.2　ショットの実装　……大量ショットのインスタンス，程良い速度，回転描画</h4>
+<ul class="toc">
+<li>ショットはキャラクターの一種　……Characterクラスを継承してShotクラス</li>
+<li>キャラクターからショットを放つ　……Characterクラス，Shotクラス，Viperクラス</li>
+<li>ショットのことを踏まえた初期化処理　……大量のショットのインスタンスを扱う</li>
+<li>ロードの完了と描画処理<ul class="toc">
+	<li>render関数の呼び出し</li></ul></li>
+<li>ショットが高速に生成されることを防ぐ　……密生するショットの原因と対策</li>
+<li>Column　setTimeoutとsetInterval</li>
+<li>ショットの進行方向を設定可能にする</li>
+<li>異なる種類のショットを同時に放てるようにする</li>
+<li>ショットを回転させて描画する<ul class="toc">
+	<li>Canvas2Dコンテキストにおける回転表現</li>
+	<li>原点を意識して回転処理を行う</li>
+	<li>Canvas2Dコンテキストの状態保存と状態復元</li>
+	<li>その他の変更点</li></ul></li>
+<li>Column　Math.PI * 1.5の意味するもの</li>
+</ul>
+<h4>6.3　敵キャラクターの実装　……敵キャラクターの配置，シーン管理＆更新，敵キャラクターのタイプ</h4>
+<ul class="toc">
+<li>Column　サイン，コサインで作るベクトルは常に単位ベクトル</li>
+<li>敵キャラクターのためのクラスを実装する</li>
+<li>「シーン」という概念　……SceneManagerクラス</li>
+<li>シーン管理クラスの利用とシーン更新用の関数<ul class="toc">
+	<li>［まとめ］シーン関連の変更点</li></ul></li>
+<li>連続して敵キャラクターが出現するシーン</li>
+<li>キャラクターに「タイプ」の概念を追加する</li>
+</ul>
+<h4>6.4　本章のまとめ</h4>
+
+
+
+<h3>第7章　状態に応じた判定や演出のプログラミング　……ゼロから作るシューティングゲーム❸</h3>
+
+<h4>7.1　衝突判定　……オブジェクト同士の衝突，エフェクト，補間関数/イージング関数</h4>
+<ul class="toc">
+<li>衝突を判定するロジック　……形状に応じた判定の基本<ul class="toc">
+	<li>矩形との衝突判定の注意点</li></ul></li>
+<li>ベクトルを利用した衝突判定　……ベクトルの長さを測る方法の応用</li>
+<li>Positionクラスの拡張　……2つの座標間の距離を計測</li>
+<li>自機キャラクターのショットと敵との衝突判定　……攻撃力とライフ</li>
+<li>Column　キャラクターのサイズ</li>
+<li>破壊を演出する　……爆発エフェクト<ul class="toc">
+	<li>Explosionクラス</li></ul></li>
+<li>爆発エフェクトの質感を向上する　……ランダム要素を取り入れる</li>
+<li>補間関数で減衰するような動きを表現　……より自然な変化</li>
+</ul>
+<h4>7.2　自機キャラクターの状態に応じた処理　……ライフの減算，ゲームオーバーの演出，再スタート</h4>
+<ul class="toc">
+<li>自機キャラクターと敵ショットとの衝突判定　……敵キャラクターの攻撃</li>
+<li>ゲームオーバーの演出とゲームの再スタート　……ゲームの終わり。しかし，実装と演出は続く...</li>
+</ul>
+<h4>7.3　ゲームの品質向上　……スコア，敵キャラの攻撃力＆耐久力，シーン管理，背景，音声，ボスキャラ</h4>
+<ul class="toc">
+<li>スコアを集計して表示する</li>
+<li>Column　String.padStartメソッド</li>
+<li>敵キャラクターのバリエーションを増やす<ul class="toc">
+	<li>自機狙い弾を放つ敵キャラクター</li>
+	<li>耐久力の高い敵キャラクター</li>
+	<li>シーン管理の見直し　……よりゲームらしく</li></ul></li>
+<li>背景を追加する　……ゲームの舞台を表現する演出</li>
+<li>効果音を再生する　……シーンの雰囲気を底上げする演出<ul class="toc">
+	<li>ユーザーの操作を受けてから初期化処理を行う</li>
+	<li>音声データを扱う自作クラスを実装する　……Soundクラス</li>
+	<li>Promiseと非同期処理</li>
+	<li>AudioContextによる音声データの再生</li></ul></li>
+<li>Column　コールバック関数とPromise</li>
+<li>Column　JavaScriptとガベージコレクタ</li>
+<li>［いよいよ最終仕上げへ］ボスキャラクターやホーミングショットの実装に挑戦！<ul class="toc">
+	<li>ボスキャラクター本体の実装　……キャラクター自身が「モード」を持つ</li>
+	<li>ホーミングショットの実装　……内積＆外積の知識をフル活用</li></ul></li>
+<li>Column　プログラミングと数学や物理</li>
+</ul>
+<h4>7.4　本章のまとめ</h4>
+
+
+
+<h3>第8章　ピクセルと色のプログラミング　ピクセルを塗る操作と感覚</h3>
+
+<h4>8.1　［再入門］グラフィックスを構成するピクセル　……ピクセルと画像処理</h4>
+<ul class="toc">
+<li>そもそもピクセルとは何か？　……グラフィックスを構成する最小の単位</li>
+<li>ピクセルを操作する画像処理　……ある意味ではグラフィックスプログラミングの本質</li>
+<li>Column　ペイントソフトは画像処理の宝庫</li>
+</ul>
+<h4>8.2　Canvas APIでピクセルを直接操作する　……ピクセル操作の窓口「ImageData」</h4>
+<ul class="toc">
+<li>［基礎知識］同一生成元ポリシー　……ローカル環境とWebブラウザのセキュリティ</li>
+<li>ローカルサーバーを起動してファイルをプレビューする</li>
+<li>Chromeの拡張機能を利用したローカルサーバーの起動　……Web Server for Chrome</li>
+<li>Column　（比較的簡単な）その他のローカルサーバー起動方法</li>
+<li>ImageDataオブジェクト　……Canvas要素のピクセルを操作する窓口</li>
+<li>TypedArray　……数値を効率良く扱える型付き配列<ul class="toc">
+	<li>Uint8ClampedArray形式　……値がクランプされる特殊な形式</li></ul></li>
+<li>Column　JavaScriptとバイナリデータ　……TypedArray</li>
+<li>ピクセルの並び順とデータ構造　……ImageDataを利用したピクセル情報の抜き出し</li>
+</ul>
+<h4>8.3　画像処理プログラミングの基本テクニック　……ネガポジ反転，グレースケール，2値化，エッジ検出，ノイズ除去，モザイク</h4>
+<ul class="toc">
+<li>ネガポジ反転</li>
+<li>グレースケール　……色の鮮やかさと引き換えに。白〜灰色〜黒の明暗を得る</li>
+<li>2値化　……白か黒か。色が二択</li>
+<li>Column　意外にも奥が深い（!?）グレースケールの世界</li>
+<li>エッジ検出　……色差分を可視化するラプラシアンフィルター</li>
+<li>ノイズ除去　……メディアンフィルターで極端に色が異なるピクセルを除去する</li>
+<li>Column　上下左右だけでなく，斜め方向も加えたラプラシアンフィルター</li>
+<li>Column　メディアンフィルターを繰り返し実行する</li>
+<li>モザイク　……ピクセルの大きさを変化させる</li>
+</ul>
+<h4>8.4　本章のまとめ</h4>
+    </section>
+    <section id="support">
+      <h2>サポート</h2>
+<p>現在サポート情報はありません。</p>
+    </section>
+  </div>
+  </div>
+<script defer="defer">try{twttr.widgets.load();FB.XFBML.parse();Hatena.Bookmark.BookmarkButton.setup();}catch(e){}</script>
+</div>    <div id="bookList">
+      <h2>商品一覧</h2>
+      <div id="topNavigation">
+        <div id="filter">
+          <form id="search" action="/dp" method="get">
+            <input type="search" name="query" id="searchText" title="検索する商品のキーワードを入力" placeholder="商品のキーワード" required="required" value=""/>
+            <input type="submit" id="searchSubmit" value="検索" title="検索する"/>
+          </form>
+          <div id="select">
+            <a href="" id="selectLabel" title="商品ジャンルを選択する"></a>
+            <div id="selectMenu">
+              <ul id="selectMenuBody"></ul>
+            </div>
+          </div>
+        </div>
+        <nav id="pagingTop">
+        </nav>
+      </div>
+      <ul itemprop="isPartOf" itemscope="itemscope" itemtype="http://www.schema.org/CollectionPage" id="listBook" class="list-book">
+      </ul>
+      <nav id="pagingBottom">
+      </nav>
+    </div>
+  </div>
+  <footer id="footer" itemscope="itemscope" itemtype="http://www.schema.org/WPFooter">
+    <div id="wait" class="hidden"></div>
+    <nav id="navigation" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
+      <ul id="navigationLink">
+        <li id="navLinkHome" class="current"><a itemprop="url" href="/dp" title="ストア" class="home">ストア</a></li>
+        <li id="navLinkMyPage"><a itemprop="url" href="/dp/my-page" title="マイページ" class="mypage">マイページ</a></li>
+        <li id="navLinkInfor"><a itemprop="url" href="/dp/information" title="お知らせ" class="information">お知らせ</a></li>
+        <li id="navLinkHelp"><a itemprop="url" href="/dp/help" title="ヘルプ" class="help">ヘルプ</a></li>
+      </ul>
+    </nav>
+    <nav id="function" itemscope="itemscope" itemtype="http://www.schema.org/WPSideBar">
+      <div id="backgroundWrapper" style="display:block;opacity:0.4"></div>
+      <div id="navInfor"></div>
+    </nav>
+    <div id="storeInformation">
+      <ul id="footerLink">
+        <li>Twitter: <a href="https://twitter.com/gihyoDP">@gihyoDP</a></li>
+        <li><a href="/dp/help/about/site">このサイトについて</a></li>
+        <li><a href="/dp/help/about/terms">利用規約</a></li>
+        <li><a href="/dp/help/about/privacy">プライバシーポリシー</a></li>
+        <li><a href="/dp/help/about/law">特定商取引法に基づく表示</a></li>
+      </ul>
+      <p id="storeCopyright"><small>Copyright © 2020 <span class="reserved">All Rights Reserved by</span> <a href="/book">Gijutsu-Hyohron Co., Ltd.</a></small></p>
+    </div>
+  </footer>
+<script>var params={"url":"https:\/\/gihyo.jp\/dp\/ebook\/2020\/978-4-297-11086-4","path":"\/dp\/ebook\/2020\/978-4-297-11086-4","targetId":"978-4-297-11086-4","parent":"\/dp\/genre\/%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3%E3%83%BB%E7%B4%A0%E6%9D%90%E9%9B%86","overlay":true,"body":"    <div id=\"bookList\">\n      <h2>\u5546\u54c1\u4e00\u89a7<\/h2>\n      <div id=\"topNavigation\">\n        <div id=\"filter\">\n          <form id=\"search\" action=\"\/dp\" method=\"get\">\n            <input type=\"search\" name=\"query\" id=\"searchText\" title=\"\u691c\u7d22\u3059\u308b\u5546\u54c1\u306e\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\" placeholder=\"\u5546\u54c1\u306e\u30ad\u30fc\u30ef\u30fc\u30c9\" required=\"required\" value=\"\"\/>\n            <input type=\"submit\" id=\"searchSubmit\" value=\"\u691c\u7d22\" title=\"\u691c\u7d22\u3059\u308b\"\/>\n          <\/form>\n          <div id=\"select\">\n            <a href=\"\" id=\"selectLabel\" title=\"\u5546\u54c1\u30b8\u30e3\u30f3\u30eb\u3092\u9078\u629e\u3059\u308b\"><\/a>\n            <div id=\"selectMenu\">\n              <ul id=\"selectMenuBody\"><\/ul>\n            <\/div>\n          <\/div>\n        <\/div>\n        <nav id=\"pagingTop\">\n        <\/nav>\n      <\/div>\n      <ul itemprop=\"isPartOf\" itemscope=\"itemscope\" itemtype=\"http:\/\/www.schema.org\/CollectionPage\" id=\"listBook\" class=\"list-book\">\n      <\/ul>\n      <nav id=\"pagingBottom\">\n      <\/nav>\n    <\/div>","isLogin":false,"dialog":"<aside id=\"dialog\" class=\"dialog-login\" style=\"opacity:0\">\n  <div id=\"dialogBody\">\n    <div id=\"gihyoAccount\">\n      <h2>\u30e1\u30fc\u30eb\u30a2\u30c9\u30ec\u30b9\u3067\u30ed\u30b0\u30a4\u30f3<\/h2>\n      <form action=\"?login\" method=\"post\">\n        <input type=\"hidden\" name=\"fid\" value=\"\"\/>\n        <dl>\n          <dt>\u30a2\u30ab\u30a6\u30f3\u30c8<\/dt>\n          <dd><input type=\"email\" name=\"account\" placeholder=\"\u30e1\u30fc\u30eb\u30a2\u30c9\u30ec\u30b9\" required=\"required\" title=\"\u30a2\u30ab\u30a6\u30f3\u30c8\u306e\u30e1\u30fc\u30eb\u30a2\u30c9\u30ec\u30b9\u3092\u5165\u529b\"\/><\/dd>\n          <dt>\u30d1\u30b9\u30ef\u30fc\u30c9<\/dt>\n          <dd><input type=\"password\" name=\"password\" placeholder=\"\u30d1\u30b9\u30ef\u30fc\u30c9\" required=\"required\" title=\"\u30a2\u30ab\u30a6\u30f3\u30c8\u306e\u30d1\u30b9\u30ef\u30fc\u30c9\u3092\u5165\u529b\"\/><\/dd>\n        <\/dl>\n        <p id=\"loginButton\"><input type=\"submit\" value=\"\u30ed\u30b0\u30a4\u30f3\" title=\"\u30ed\u30b0\u30a4\u30f3\u3059\u308b\"\/><\/p>\n        <ul id=\"loginFunction\">\n          <li><a href=\"\/dp\/help\/buy\/forgot\">\u30d1\u30b9\u30ef\u30fc\u30c9\u3092\u304a\u5fd8\u308c\u306e\u65b9<\/a><\/li>\n          <li><a href=\"\/dp\/help\/buy\/account\">\u65b0\u898f\u767b\u9332\u3092\u3054\u5e0c\u671b\u306e\u65b9<\/a><\/li>\n        <\/ul>\n      <\/form>\n    <\/div>\n    <div id=\"externalSite\">\n      <h2>\u5916\u90e8\u30b5\u30fc\u30d3\u30b9\u3067\u30ed\u30b0\u30a4\u30f3<\/h2>\n      <ul>\n      <li class=\"google\"><a href=\"https:\/\/gihyo.jp\/auth\/google\">Google<\/a><\/li>\n      <li class=\"facebook\"><a href=\"https:\/\/gihyo.jp\/auth\/facebook\">Facebook<\/a><\/li>\n      <li class=\"yahoo\"><a href=\"https:\/\/gihyo.jp\/auth\/yahoojp\">Yahoo! JAPAN<\/a><\/li>\n      <\/ul>\n      <p><a href=\"\/dp\/help\/buy\/external\">\u5916\u90e8\u30b5\u30fc\u30d3\u30b9\u3067\u306e\u30ed\u30b0\u30a4\u30f3\u306b\u3064\u3044\u3066<\/a><\/p>\n    <\/div>\n    <p id=\"close\"><a href=\"#close\" title=\"\u9589\u3058\u308b\">\u9589\u3058\u308b<\/a><\/p>\n  <\/div>\n<\/aside>"}</script>
+  <script>var asyncCall=function(){var e=Array.prototype.slice,a=Function.prototype.bind||function(j){var a=this,b=e.call(arguments,1);return function(){var c=e.call(arguments);return a.apply(j,b.concat(c))}},f=a.call(a,Function.prototype.call),b=f(e),c=f(a),d=f(Function.prototype.apply);if("undefined"!==typeof process)a=function(){var a=b(arguments);process.nextTick(d(c,null,a))};else if("function"===typeof setImmediate)a=function(){var a=b(arguments);setImmediate(d(c,null,a))};else if("function"===typeof MessageChannel){var g=new MessageChannel,h=[];g.port1.onmessage=function(){h.shift()()};a=function(){var a=b(arguments);h.push(d(c,null,a));g.port2.postMessage(0)}}else a=function(){var a=b(arguments);setTimeout(d(c,null,a),0)};return a}();window.onerror=function(mes,fname,lnum){var erIgnore=['top.GLOBALS','originalCreateNotification','canvas.contentDocument','fb_xd_fragment','Script error.'];for(i=0;i<erIgnore.length;i++){if(mes.indexOf(erIgnore[i])>-1){return false;}};var mes='message:'+mes+', file:'+fname+', line:'+lnum+', href:'+location.href+', UA:'+window.navigator.userAgent;ga('send','event','Error','JSError',mes);};</script>
+  <script src="//platform.twitter.com/widgets.js" id="twitter-wjs" async defer></script>
+  <script src="//connect.facebook.net/ja_JP/sdk.js#xfbml=1&appId=185201618169441&version=v2.8" id="facebook-jssdk" async defer></script>
+  <script src="//apis.google.com/js/platform.js" async defer></script>
+  <script src="//b.hatena.ne.jp/js/bookmark_button.js" charset="utf-8" async defer></script>
+</body>
+</html>

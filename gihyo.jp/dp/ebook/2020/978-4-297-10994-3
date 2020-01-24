@@ -1,0 +1,361 @@
+<!DOCTYPE HTML>
+<html lang="ja" class="pc">
+<head>
+  <meta charset="UTF-8">
+  <title>令和02-03年 基本情報技術者 試験によくでる問題集【午前】 | Gihyo Digital Publishing … 技術評論社の電子書籍</title>
+  <meta http-equiv="Content-Style-Type" content="text/css"/>
+  <meta http-equiv="Content-Script-Type" content="application/javascript"/>
+  <meta name="description" content="基本情報技術者試験，午前試験を完全対策！本書は，基本情報技術者試験のうち，「午前問題」に的を絞ったテーマ別頻出問題集です。長年のノウハウで，よくでる問題を厳選。苦手克服＆実戦力アップに最適な一冊です！本書の特徴近年の出題傾向を踏まえて，よくでる問題を厳選収録頻出問題をテーマ別に掲載。苦手な分野を集中対策できる問題解説は，重要な知識＋ていねいな解説でよくわかる章ごとに「この章の攻略法」を設け，核となる知識を詳しく解説直近5年間の頻出度合いがひと目でわかる実績マークを掲載"/>
+  <meta name="keywords" content="電子書籍,電子出版,EPUB,PDF,技術評論社"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="format-detection" content="telephone=no"/>
+  <link rel="related" href="http://gihyo.jp/dp/catalogs.opds" type="application/atom+xml;profile=opds-catalog" title="Gihyo Digital Publishing OPDS Catalog"/>
+  <link rel="shortcut icon" href="/assets/templates/gdp/favicon.ico" type="image/vnd.microsoft.icon"/>
+  <link rel="apple-touch-icon-precomposed" href="/dp/assets/gdp-icon.png"/>
+  <!--[if lt IE 9]>
+    <script>var msie=8;</script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="/dp/assets/js/html5shiv.min.js"></script>
+    <script src="//css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <script src="/dp/assets/js/selectivizr-min.js"></script>
+    <script src="/dp/assets/js/addEventListener.min.js"></script>
+    <script src="/dp/assets/js/textContent.min.js"></script>
+  <![endif]-->
+  <!--[if lte IE 9]>
+    <script src="/dp/assets/js/classList.min.js" defer></script>
+  <![endif]-->
+  <link rel="stylesheet" href="/dp/assets/style/store1217.css" type="text/css" media="all"/>
+  <script src="/dp/assets/js/gdpFunction0411.min.js" defer></script>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:site" content="@gihyoDP"/>
+  <meta property="og:title" content="令和02-03年 基本情報技術者 試験によくでる問題集【午前】 | Gihyo Digital Publishing … 技術評論社の電子書籍"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:description" content="基本情報技術者試験，午前試験を完全対策！本書は，基本情報技術者試験のうち，「午前問題」に的を絞ったテーマ別頻出問題集です。長年のノウハウで，よくでる問題を厳選。苦手克服＆実戦力アップに最適な一冊です！本書の特徴近年の出題傾向を踏まえて，よくでる問題を厳選収録頻出問題をテーマ別に掲載。苦手な分野を集中対策できる問題解説は，重要な知識＋ていねいな解説でよくわかる章ごとに「この章の攻略法」を設け，核となる知識を詳しく解説直近5年間の頻出度合いがひと目でわかる実績マークを掲載"/>
+  <meta property="og:url" content="https://gihyo.jp/dp/ebook/2020/978-4-297-10994-3"/>
+  <meta property="og:image" content="https://image.gihyo.co.jp/assets/images/gdp/2020/978-4-297-10994-3.jpg"/>
+  <meta property="og:site_name" content="Gihyo Digital Publishing"/>
+  <meta property="fb:app_id" content="185201618169441"/>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-4149703-1', 'auto');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+  </script>
+</head>
+<body itemscope="itemscope" itemtype="http://schema.org/WebPage" class="page-home">
+  <header id="header" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
+    <h1 class="home-title">Gihyo Digital Publishing</h1>
+    <h2 class="home-subtitle">技術評論社の電子書籍サイト</h2>
+    <nav id="headerFunction">
+      <div id="login">
+        <a href="#login" title="ログイン・会員登録">ログイン</a>
+      </div>
+      <div id="cart">
+        <a href="/dp/cart" title="カートは空です">カート</a>
+      </div>
+    </nav>
+  </header>
+  <div id="main">
+    <noscript><div id="noscript">
+      <p>本サイトではJavaScriptを使用しております。JavaScriptが無効な状態ではご利用いただけません。</p>
+    </div></noscript>
+
+<div id="overlayWindow" class="book-infor" itemscope itemtype="http://schema.org/Book" typeof="product:Product" xmlns:product="http://search.yahoo.com/searchmonkey/product/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:media="http://search.yahoo.com/searchmonkey/media/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:currency="http://search.yahoo.com/searchmonkey-datatype/currency/" style="display:block;opacity:1">
+  <header id="overlayHeader">
+    <h1>書籍概要</h1>
+    <nav id="overlayFunction">
+      <p id="close"><a href="/dp/genre/%E8%B3%87%E6%A0%BC%E8%A9%A6%E9%A8%93%EF%BC%88IT%EF%BC%89" title="閉じる">閉じる</a></p>
+      <ul id="jump">
+        <li id="detailRef"><a href="#title" title="概要を見る">概要</a></li>
+        <li id="contentRef"><a href="#content" title="目次を見る">目次</a></li>
+        <li id="supportRef"><a href="#support" title="サポート情報を見る">サポート</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div id="bookInforMain">
+  <hgroup id="title">
+<h2 id="bookSeries"><a href="/dp/series/%E6%83%85%E5%A0%B1%E5%87%A6%E7%90%86%E6%8A%80%E8%A1%93%E8%80%85%E8%A9%A6%E9%A8%93">情報処理技術者試験</a></h2>
+    <h1 id="bookTitle" property="rdfs:label" itemprop="name">令和<wbr/>02-03<wbr/>年 基本情報技術者 試験によくでる問題集<wbr/>【午前】</h1>
+  </hgroup>
+  <aside id="bookCover" rel="rdfs:seeAlso media:image"><img src="https://image.gihyo.co.jp/assets/images/gdp/2020/978-4-297-10994-3.jpg" alt="令和02-03年 基本情報技術者 試験によくでる問題集【午前】"/></aside>
+  <dl id="publicationData" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+    <dt>著者</dt>
+    <dd itemprop="author">イエローテールコンピュータ　著</dd>
+    <dt>発売日</dt>
+    <dd><time datetime="2020-01-17">2020年1月17日</time></dd>
+    <dt>更新日</dt>
+    <dd><time datetime="2020-01-17">2020年1月17日</time></dd>
+  </dl>
+  <aside>
+    <ul class="information">
+      <li>本書は，<a href="https://gihyo.jp/book/2020/978-4-297-10993-6" target="_blank">2020年1月17日に発売される書籍</a>の電子版です。</li>
+      <li class="need-login">ご購入には会員登録・ログインが必要です</li>
+      <li class="corporate"><a href="/dp/help/buy/bulkpurchase">学校・法人等団体でのご利用について</a></li>
+    </ul>
+    <dl id="productPrice">
+<dt class="disable"><span class="name">PDF</span><span class="buy">1,880円 </span></dt><dd class="disable"><span class="page"><span itemprop="numberOfPages">416</span>ページ相当</span><span class="pdf">PDF</span> <span class="plan">1月17日発売予定<a href="#" id="releaseNotify" class="" data-pid="402745" title="発売日にメールで通知する（要ログイン）">発売日に通知する</a></span></dd>
+<dd style="color:#de3434">※本書PDF版はテキストコピー機能がご利用いただけません</dd>
+
+    </dl>
+  </aside>
+  <aside id="social">
+    <ul>
+      <li class="twitter"><a href="https://twitter.com/search?q=https://gihyo.jp/dp/ebook/2020/978-4-297-10994-3" class="twitter--list">リスト</a><a href="http://twitter.com/share" class="twitter-share-button" data-url="https://gihyo.jp/dp/ebook/2020/978-4-297-10994-3" data-text="令和02-03年 基本情報技術者 試験によくでる問題集【午前】 #gihyoDP" data-count="none" data-lang="ja">ツイート</a></li>
+      <li class="facebook"><div class="fb-like" data-href="https://gihyo.jp/dp/ebook/2020/978-4-297-10994-3" data-send="false" data-layout="box_count" data-width="450" data-show-faces="false" data-share="true"></div></li>
+      <li class="hatena"><a href="http://b.hatena.ne.jp/entry/https://gihyo.jp/dp/ebook/2020/978-4-297-10994-3" class="hatena-bookmark-button" data-hatena-bookmark-layout="vertical-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="//b.hatena.ne.jp/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a></li>
+    </ul>
+  </aside>
+  <div id="productDetail">
+    <section id="detail">
+      <h2>概要</h2>
+<p>基本情報技術者試験，<wbr/>午前試験を完全対策！</p>
+
+<p>本書は，<wbr/>基本情報技術者試験のうち，<wbr/>「午前問題」に的を絞ったテーマ別頻出問題集です。<br />
+長年のノウハウで，<wbr/>よくでる問題を厳選。苦手克服＆実戦力アップに最適な一冊です！</p>
+
+<h5>本書の特徴</h5>
+<ul>
+<li>近年の出題傾向を踏まえて，<wbr/>よくでる問題を厳選収録</li>
+<li>頻出問題をテーマ別に掲載。苦手な分野を集中対策できる</li>
+<li>問題解説は，<wbr/>重要な知識＋ていねいな解説でよくわかる</li>
+<li>章ごとに「この章の攻略法」を設け，<wbr/>核となる知識を詳しく解説</li>
+<li>直近5年間の頻出度合いがひと目でわかる実績マークを掲載</li>
+</ul><h3>こんな方におすすめ</h3>
+<ul><li>基本情報技術者試験を受験される方</li><li>特に，<wbr/>「午前」試験を重点的に対策したい方</li></ul>
+
+    </section>
+    <section id="content">
+      <h2>目次</h2>
+<div id="bookSearch">
+<form id="bookSearchForm" action="search" method="post">
+  <input type="search" name="query" id="bookSearchText" title="本書内を検索するキーワードを入力" placeholder="本書内のキーワード" required="required" value="">
+  <input type="hidden" name="code" value="40491">
+  <input type="submit" id="bookSearchSubmit" value="検索" title="検索する">
+</form>
+</div><h3>第1章　テクノロジ系　基礎理論</h3>
+<ul class="toc">
+<li>この章の攻略法</li>
+<li>01 基数と基数変換</li>
+<li>02 シフト演算</li>
+<li>03 固定小数点数</li>
+<li>04 浮動小数点数</li>
+<li>05 算術演算と誤差</li>
+<li>06 集合と論理演算</li>
+<li>07 確率と統計</li>
+<li>08 応用数学</li>
+<li>09 情報に関する理論</li>
+<li>10 通信に関する理論</li>
+<li>11 計測・制御に関する理論</li>
+<li>12 スタックとキュー</li>
+<li>13 リスト構造</li>
+<li>14 木構造</li>
+<li>15 アルゴリズムと流れ図</li>
+<li>16 探索アルゴリズム</li>
+<li>17 整列アルゴリズム</li>
+<li>18 再帰と関数</li>
+<li>19 プログラミング</li>
+<li>20 プログラム言語とマークアップ言語</li>
+
+</ul>
+<h3>第2章　テクノロジ系　コンピュータシステム</h3>
+<ul class="toc">
+<li>この章の攻略法</li>
+<li>01 プロセッサの構造</li>
+<li>02 命令とアドレッシング</li>
+<li>03 割込み処理</li>
+<li>04 プロセッサの性能</li>
+<li>05 プロセッサの性能評価指標</li>
+<li>06 プロセッサの高速化技術</li>
+<li>07 メモリの種類と特徴</li>
+<li>08 キャッシュメモリ</li>
+<li>09 メモリの高速化と誤り制御</li>
+<li>10 バス</li>
+<li>11 入出力インタフェース</li>
+<li>12 入出力装置</li>
+<li>13 補助記憶装置</li>
+<li>14 システムの処理形態</li>
+<li>15 システム構成</li>
+<li>16 RAID</li>
+<li>17 システムの信頼性設計</li>
+<li>18 キャパシティプランニング</li>
+<li>19 システムの評価指標</li>
+<li>20 システムの稼働率</li>
+<li>21 複合システムの稼働率</li>
+<li>22 オペレーティングシステムの役割と機能</li>
+<li>23 ジョブ管理</li>
+<li>24 タスク管理</li>
+<li>25 多重プログラミング</li>
+<li>26 実記憶管理</li>
+<li>27 仮想記憶管理</li>
+<li>28 ファイル編成</li>
+<li>29 ディレクトリ管理</li>
+<li>30 障害管理とバックアップ</li>
+<li>31 開発支援ツール</li>
+<li>32 言語プロセッサ</li>
+<li>33 オープンソースソフトウェア</li>
+<li>34 ハードウェア</li>
+<li>35 論理回路</li>
+
+</ul>
+<h3>第3章　テクノロジ系　技術要素</h3>
+<ul class="toc">
+<li>この章の攻略法</li>
+<li>01 ヒューマンインタフェース</li>
+<li>02 コード設計と入力データチェック</li>
+<li>03 マルチメディア</li>
+<li>04 データベースとスキーマ</li>
+<li>05 関係モデルと論理設計</li>
+<li>06 データベース管理システム</li>
+<li>07 図式手法によるデータベース設計</li>
+<li>08 データの正規化</li>
+<li>09 SQLによるデータ定義</li>
+<li>10 関係データベースのデータ操作</li>
+<li>11 トランザクション処理</li>
+<li>12 データベースの障害対策</li>
+<li>13 データベースの応用</li>
+<li>14 データ伝送時間の計算</li>
+<li>15 メディアアクセス制御</li>
+<li>16 OSI基本参照モデルとLAN間接続装置</li>
+<li>17 インターネット技術</li>
+<li>18 IPアドレスの割当て</li>
+<li>19 通信プロトコル</li>
+<li>20 ネットワーク管理</li>
+<li>21 ネットワーク応用</li>
+<li>22 情報セキュリティと脅威</li>
+<li>23 マルウェアと不正プログラム</li>
+<li>24 攻撃手法</li>
+<li>25 暗号技術</li>
+<li>26 電子署名と公開鍵基盤</li>
+<li>27 アクセス管理</li>
+<li>28 利用者認証技術</li>
+<li>29 情報セキュリティ管理</li>
+<li>30 情報セキュリティ対策</li>
+<li>31 セキュアプロトコルとネットワークセキュリティ</li>
+<li>32 アプリケーションセキュリティ対策</li>
+
+</ul>
+<h3>第4章　テクノロジ系　開発技術</h3>
+<ul class="toc">
+<li>この章の攻略法</li>
+<li>01 システム開発の手順</li>
+<li>02 開発の図式手法</li>
+<li>03 オブジェクト指向設計</li>
+<li>04 モジュール分割</li>
+<li>05 ホワイトボックステスト</li>
+<li>06 ブラックボックステスト</li>
+<li>07 ユニットテストとレビュー</li>
+<li>08 ソフトウェア結合テスト</li>
+<li>09 システム結合テスト</li>
+<li>10 ソフトウェアの保守</li>
+<li>11 ソフトウェアの開発手法</li>
+<li>12 開発環境管理と構成管理</li>
+<li>13 ソフトウェアの再利用</li>
+
+</ul>
+<h3>第5章　マネジメント系</h3>
+<ul class="toc">
+<li>この章の攻略法</li>
+<li>01 プロジェクトマネジメント</li>
+<li>02 プロジェクトの「時間」</li>
+<li>03 プロジェクトの「コスト」</li>
+<li>04 FP法による工数見積り</li>
+<li>05 サービスマネジメント</li>
+<li>06 サービスの設計と移行</li>
+<li>07 サービスの運用とファシリティマネジメント</li>
+<li>08 システム監査</li>
+
+</ul>
+<h3>第6章　ストラテジ系</h3>
+<ul class="toc">
+<li>この章の攻略法</li>
+<li>01 情報システム戦略とシステム企画</li>
+<li>02 情報システム投資計画</li>
+<li>03 業務プロセスの改善</li>
+<li>04 ソリューションビジネス</li>
+<li>05 システムの活用促進</li>
+<li>06 調達計画と実施</li>
+<li>07 経営戦略と事業戦略</li>
+<li>08 マーケティング</li>
+<li>09 ビジネス戦略と経営管理システム</li>
+<li>10 技術開発戦略</li>
+<li>11 ビジネスシステムと公共・行政システム</li>
+<li>12 エンジニアリングシステム</li>
+<li>13 e-ビジネス</li>
+<li>14 民生機器と産業機器</li>
+<li>15 企業経営と組織</li>
+<li>16 OR・IEと業務分析</li>
+<li>17 QC七つ道具</li>
+<li>18 企業会計</li>
+<li>19 知的財産権の保護</li>
+<li>20 労働関連法規</li>
+<li>21 セキュリティ関連とその他の法規</li>
+</ul>
+    </section>
+    <section id="support">
+      <h2>サポート</h2>
+<p>現在サポート情報はありません。</p>
+    </section>
+  </div>
+  </div>
+<script defer="defer">try{twttr.widgets.load();FB.XFBML.parse();Hatena.Bookmark.BookmarkButton.setup();}catch(e){}</script>
+</div>    <div id="bookList">
+      <h2>商品一覧</h2>
+      <div id="topNavigation">
+        <div id="filter">
+          <form id="search" action="/dp" method="get">
+            <input type="search" name="query" id="searchText" title="検索する商品のキーワードを入力" placeholder="商品のキーワード" required="required" value=""/>
+            <input type="submit" id="searchSubmit" value="検索" title="検索する"/>
+          </form>
+          <div id="select">
+            <a href="" id="selectLabel" title="商品ジャンルを選択する"></a>
+            <div id="selectMenu">
+              <ul id="selectMenuBody"></ul>
+            </div>
+          </div>
+        </div>
+        <nav id="pagingTop">
+        </nav>
+      </div>
+      <ul itemprop="isPartOf" itemscope="itemscope" itemtype="http://www.schema.org/CollectionPage" id="listBook" class="list-book">
+      </ul>
+      <nav id="pagingBottom">
+      </nav>
+    </div>
+  </div>
+  <footer id="footer" itemscope="itemscope" itemtype="http://www.schema.org/WPFooter">
+    <div id="wait" class="hidden"></div>
+    <nav id="navigation" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
+      <ul id="navigationLink">
+        <li id="navLinkHome" class="current"><a itemprop="url" href="/dp" title="ストア" class="home">ストア</a></li>
+        <li id="navLinkMyPage"><a itemprop="url" href="/dp/my-page" title="マイページ" class="mypage">マイページ</a></li>
+        <li id="navLinkInfor"><a itemprop="url" href="/dp/information" title="お知らせ" class="information">お知らせ</a></li>
+        <li id="navLinkHelp"><a itemprop="url" href="/dp/help" title="ヘルプ" class="help">ヘルプ</a></li>
+      </ul>
+    </nav>
+    <nav id="function" itemscope="itemscope" itemtype="http://www.schema.org/WPSideBar">
+      <div id="backgroundWrapper" style="display:block;opacity:0.4"></div>
+      <div id="navInfor"></div>
+    </nav>
+    <div id="storeInformation">
+      <ul id="footerLink">
+        <li>Twitter: <a href="https://twitter.com/gihyoDP">@gihyoDP</a></li>
+        <li><a href="/dp/help/about/site">このサイトについて</a></li>
+        <li><a href="/dp/help/about/terms">利用規約</a></li>
+        <li><a href="/dp/help/about/privacy">プライバシーポリシー</a></li>
+        <li><a href="/dp/help/about/law">特定商取引法に基づく表示</a></li>
+      </ul>
+      <p id="storeCopyright"><small>Copyright © 2020 <span class="reserved">All Rights Reserved by</span> <a href="/book">Gijutsu-Hyohron Co., Ltd.</a></small></p>
+    </div>
+  </footer>
+<script>var params={"url":"https:\/\/gihyo.jp\/dp\/ebook\/2020\/978-4-297-10994-3","path":"\/dp\/ebook\/2020\/978-4-297-10994-3","targetId":"978-4-297-10994-3","parent":"\/dp\/genre\/%E8%B3%87%E6%A0%BC%E8%A9%A6%E9%A8%93%EF%BC%88IT%EF%BC%89","overlay":true,"body":"    <div id=\"bookList\">\n      <h2>\u5546\u54c1\u4e00\u89a7<\/h2>\n      <div id=\"topNavigation\">\n        <div id=\"filter\">\n          <form id=\"search\" action=\"\/dp\" method=\"get\">\n            <input type=\"search\" name=\"query\" id=\"searchText\" title=\"\u691c\u7d22\u3059\u308b\u5546\u54c1\u306e\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\" placeholder=\"\u5546\u54c1\u306e\u30ad\u30fc\u30ef\u30fc\u30c9\" required=\"required\" value=\"\"\/>\n            <input type=\"submit\" id=\"searchSubmit\" value=\"\u691c\u7d22\" title=\"\u691c\u7d22\u3059\u308b\"\/>\n          <\/form>\n          <div id=\"select\">\n            <a href=\"\" id=\"selectLabel\" title=\"\u5546\u54c1\u30b8\u30e3\u30f3\u30eb\u3092\u9078\u629e\u3059\u308b\"><\/a>\n            <div id=\"selectMenu\">\n              <ul id=\"selectMenuBody\"><\/ul>\n            <\/div>\n          <\/div>\n        <\/div>\n        <nav id=\"pagingTop\">\n        <\/nav>\n      <\/div>\n      <ul itemprop=\"isPartOf\" itemscope=\"itemscope\" itemtype=\"http:\/\/www.schema.org\/CollectionPage\" id=\"listBook\" class=\"list-book\">\n      <\/ul>\n      <nav id=\"pagingBottom\">\n      <\/nav>\n    <\/div>","isLogin":false,"dialog":"<aside id=\"dialog\" class=\"dialog-login\" style=\"opacity:0\">\n  <div id=\"dialogBody\">\n    <div id=\"gihyoAccount\">\n      <h2>\u30e1\u30fc\u30eb\u30a2\u30c9\u30ec\u30b9\u3067\u30ed\u30b0\u30a4\u30f3<\/h2>\n      <form action=\"?login\" method=\"post\">\n        <input type=\"hidden\" name=\"fid\" value=\"\"\/>\n        <dl>\n          <dt>\u30a2\u30ab\u30a6\u30f3\u30c8<\/dt>\n          <dd><input type=\"email\" name=\"account\" placeholder=\"\u30e1\u30fc\u30eb\u30a2\u30c9\u30ec\u30b9\" required=\"required\" title=\"\u30a2\u30ab\u30a6\u30f3\u30c8\u306e\u30e1\u30fc\u30eb\u30a2\u30c9\u30ec\u30b9\u3092\u5165\u529b\"\/><\/dd>\n          <dt>\u30d1\u30b9\u30ef\u30fc\u30c9<\/dt>\n          <dd><input type=\"password\" name=\"password\" placeholder=\"\u30d1\u30b9\u30ef\u30fc\u30c9\" required=\"required\" title=\"\u30a2\u30ab\u30a6\u30f3\u30c8\u306e\u30d1\u30b9\u30ef\u30fc\u30c9\u3092\u5165\u529b\"\/><\/dd>\n        <\/dl>\n        <p id=\"loginButton\"><input type=\"submit\" value=\"\u30ed\u30b0\u30a4\u30f3\" title=\"\u30ed\u30b0\u30a4\u30f3\u3059\u308b\"\/><\/p>\n        <ul id=\"loginFunction\">\n          <li><a href=\"\/dp\/help\/buy\/forgot\">\u30d1\u30b9\u30ef\u30fc\u30c9\u3092\u304a\u5fd8\u308c\u306e\u65b9<\/a><\/li>\n          <li><a href=\"\/dp\/help\/buy\/account\">\u65b0\u898f\u767b\u9332\u3092\u3054\u5e0c\u671b\u306e\u65b9<\/a><\/li>\n        <\/ul>\n      <\/form>\n    <\/div>\n    <div id=\"externalSite\">\n      <h2>\u5916\u90e8\u30b5\u30fc\u30d3\u30b9\u3067\u30ed\u30b0\u30a4\u30f3<\/h2>\n      <ul>\n      <li class=\"google\"><a href=\"https:\/\/gihyo.jp\/auth\/google\">Google<\/a><\/li>\n      <li class=\"facebook\"><a href=\"https:\/\/gihyo.jp\/auth\/facebook\">Facebook<\/a><\/li>\n      <li class=\"yahoo\"><a href=\"https:\/\/gihyo.jp\/auth\/yahoojp\">Yahoo! JAPAN<\/a><\/li>\n      <\/ul>\n      <p><a href=\"\/dp\/help\/buy\/external\">\u5916\u90e8\u30b5\u30fc\u30d3\u30b9\u3067\u306e\u30ed\u30b0\u30a4\u30f3\u306b\u3064\u3044\u3066<\/a><\/p>\n    <\/div>\n    <p id=\"close\"><a href=\"#close\" title=\"\u9589\u3058\u308b\">\u9589\u3058\u308b<\/a><\/p>\n  <\/div>\n<\/aside>"}</script>
+  <script>var asyncCall=function(){var e=Array.prototype.slice,a=Function.prototype.bind||function(j){var a=this,b=e.call(arguments,1);return function(){var c=e.call(arguments);return a.apply(j,b.concat(c))}},f=a.call(a,Function.prototype.call),b=f(e),c=f(a),d=f(Function.prototype.apply);if("undefined"!==typeof process)a=function(){var a=b(arguments);process.nextTick(d(c,null,a))};else if("function"===typeof setImmediate)a=function(){var a=b(arguments);setImmediate(d(c,null,a))};else if("function"===typeof MessageChannel){var g=new MessageChannel,h=[];g.port1.onmessage=function(){h.shift()()};a=function(){var a=b(arguments);h.push(d(c,null,a));g.port2.postMessage(0)}}else a=function(){var a=b(arguments);setTimeout(d(c,null,a),0)};return a}();window.onerror=function(mes,fname,lnum){var erIgnore=['top.GLOBALS','originalCreateNotification','canvas.contentDocument','fb_xd_fragment','Script error.'];for(i=0;i<erIgnore.length;i++){if(mes.indexOf(erIgnore[i])>-1){return false;}};var mes='message:'+mes+', file:'+fname+', line:'+lnum+', href:'+location.href+', UA:'+window.navigator.userAgent;ga('send','event','Error','JSError',mes);};</script>
+  <script src="//platform.twitter.com/widgets.js" id="twitter-wjs" async defer></script>
+  <script src="//connect.facebook.net/ja_JP/sdk.js#xfbml=1&appId=185201618169441&version=v2.8" id="facebook-jssdk" async defer></script>
+  <script src="//apis.google.com/js/platform.js" async defer></script>
+  <script src="//b.hatena.ne.jp/js/bookmark_button.js" charset="utf-8" async defer></script>
+</body>
+</html>
